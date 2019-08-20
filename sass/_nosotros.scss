@@ -1,0 +1,311 @@
+.nav-red{
+    background: $red-valor;
+}
+
+.politica{
+    padding-top: 160px;
+    padding-bottom: 60px;
+    .title{
+        margin-bottom: 20px;
+        h1{
+            color: $red-valor;
+        }
+        .hr-title{
+            background: $red-valor;
+        }
+    }
+    .content{
+        margin: 30px 0px;
+        h3{
+            text-transform: uppercase;
+            color: $red-valor;
+            margin-bottom: 30px;
+        }
+        .hr-content{
+            background: $red-valor;
+            margin-top:70px;
+        }
+        .numeration{
+            margin: 30px 0px;
+            .number{
+                height: 52px;
+                border-right: 2px solid $red-valor;
+                font-family: $title-font;
+                font-size: 37px;
+                color: $red-valor;
+            }
+        }
+    }
+}
+
+.equipo{
+    background: $red-valor;
+    .item{
+        padding: 0 5rem;
+    }
+    .team-text{
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            font-size: 26px;
+            margin-bottom: 1.5rem;
+        }
+        .hr-content{
+            background: #FFFFFF;
+            margin:2rem 0;
+        }
+        .firma{
+            margin-top: 2rem;
+            margin-right: 2rem;
+            max-width: 200px;
+            max-height: 150px;
+            align-self: flex-end;
+        }
+    }
+}
+
+.historia{
+    padding: 5rem 0;
+    .title{
+        margin-bottom: 3rem;
+        img{
+            width: 65px;
+            float: left;
+            margin-right: 20px;
+        }
+        h3{
+            color: $gray1-valor;
+        }
+    }
+    .owl-historia{
+        .item{
+            text-align: center;
+            font-size: 14px;
+            .bubble1,.bubble2{
+                width: 18px;
+                height: 18px;
+                margin: 0 auto;
+                background: $red-valor;
+                border-radius: 50%;
+                margin-bottom: 2rem;
+                position: relative;
+                &:before, &::after{
+                    content: '';
+                    height: 1px;
+                    background: $gray2-valor;
+                    position: absolute;
+                    top: 50%;
+                }
+                &:before{
+                    left: 200%;
+                }
+                &::after{
+                    right:200%;
+                }
+            }
+            .bubble1{
+                &:before, &::after{
+                    width: 1500%;
+                }
+            }
+            .bubble2{
+                &:before, &::after{
+                    width: 700%;
+                }
+            }
+            p{
+                span{
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .owl-nav{
+            font-size: 80px;
+            color:  $red-valor;
+            position: relative;
+            bottom: 100px;
+            button{
+                position: absolute;
+                &:focus{
+                    outline:0;
+                }
+                &.owl-prev{
+                    left: -6%;
+                }
+                &.owl-next{
+                    right: -6%;
+                }
+            }
+        }
+        .owl-dots{
+            margin-top: 3rem;
+            text-align: center;
+            font-weight: 500;
+            button{
+                width: 150px;
+                height: 30px;
+                margin: 0 20px;
+                color: $gray1-valor;
+                transition: all .5s;
+                &.active{
+                    color: $red-valor;
+                }
+                &:focus{
+                    outline:0;
+                }
+            }
+            button:nth-child(1):before{
+                content: 'Fundación 1990';
+            }
+            button:nth-child(2):before{
+                content: '1990 - 2000';
+            }
+            button:nth-child(3):before{
+                content: '2000 - 2010';
+            }
+            button:nth-child(4):before{
+                content: '2010 - Actualidad';
+            }
+        }
+    }
+}
+
+.viEmpresarial{
+    background: $gray4-valor;
+    color: #FFFFFF;
+    padding: 5rem 0;
+    .content{
+        margin-top: 2rem;
+    }
+    p{
+        margin: 1rem 0;
+    }
+}
+
+.indices{
+    padding: 5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img{
+            max-height: 100px;
+        }
+        p{
+            font-size: 18px;
+            margin: 2rem 0;
+            font-weight: 500;
+            color: $gray1-valor;
+        }
+        .number{
+            font-family: $title-font;
+            font-size: 40px;
+            color: $gray4-valor;
+        }
+    }
+    
+    .vertLine{
+        position: relative;
+        &::before,&::after{
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60%;
+            background: $gray2-valor;
+            top: 16%;
+        }
+        &::before{
+            right: 0;
+        }
+        &::after{
+            left: 0;
+        }
+    }
+}
+
+.valoresCorp{
+    z-index: 2;
+    background: $red-valor;
+    color: #FFFFFF;
+    padding: 5rem 0;
+    hr{
+        background: #FFFFFF;
+    }
+    .hr-content{
+        margin: 2rem 0;
+    }
+    .content{
+        margin-top: 4rem;
+        h4{
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.equipoHumano{
+    padding: 5rem 0;
+    .title{
+        margin-bottom: 3rem;
+        color: $red-valor;
+    }
+    .owl-equipoHumano{
+        .item{
+            img{
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+            p{
+                text-align: center;
+                font-size: 14px;
+                font-weight: 100;
+                color: #FFFFFF;
+                padding: .5rem;
+                background: $red-valor;
+            }
+        }
+        .owl-nav{
+            font-size: 80px;
+            color:  $red-valor;
+            position: relative;
+            bottom: 250px;
+            button{
+                position: absolute;
+                &:focus{
+                    outline:0;
+                }
+                &.owl-prev{
+                    left: -6%;
+                }
+                &.owl-next{
+                    right: -6%;
+                }
+            }
+        }
+        .owl-dots{
+            margin-top: 1rem;
+            text-align: center;
+            font-weight: 500;
+            button{
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                margin: 0 .3rem;
+                background: $gray1-valor;
+                transition: all .5s;
+                &.active{
+                    background: $red-valor;
+                }
+                &:focus{
+                    outline:0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,553 @@
+@charset "UTF-8";
+body {
+  background: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300; }
+
+h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 34px;
+  letter-spacing: 3px; }
+
+h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 32px;
+  letter-spacing: 2.5px; }
+
+h3 {
+  font-size: 22px; }
+
+h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; }
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300; }
+
+.initial {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all 1.5s; }
+  .initial img {
+    width: 150px; }
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/home.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+header .nav {
+  width: 100%;
+  height: 80px;
+  padding: 0px 40px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3; }
+  header .nav .valor-logo img {
+    width: 220px; }
+  header .nav .nav-toggle {
+    min-width: 35px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; }
+    header .nav .nav-toggle span {
+      position: relative; }
+    header .nav .nav-toggle span, header .nav .nav-toggle span:before, header .nav .nav-toggle span:after {
+      width: 35px;
+      height: 2px;
+      background: #FFFFFF;
+      transition: .5s;
+      box-shadow: 2px 2px 2px rgba(30, 30, 30, 0.5); }
+    header .nav .nav-toggle span:before {
+      content: '';
+      position: absolute;
+      top: -10px; }
+    header .nav .nav-toggle span:after {
+      content: '';
+      position: absolute;
+      top: 10px; }
+  header .nav .active span {
+    background: transparent;
+    box-shadow: 2px 2px 2px rgba(30, 30, 30, 0); }
+    header .nav .active span:before {
+      top: 0;
+      transform: rotate(45deg); }
+    header .nav .active span:after {
+      top: 0;
+      transform: rotate(-45deg); }
+
+.sidebar {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #762124;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  z-index: 2; }
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    position: relative; }
+    .sidebar ul li {
+      margin: 20px 0px; }
+      .sidebar ul li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: .5s;
+        padding: 4px 0px; }
+        .sidebar ul li a:before {
+          content: attr(data-text);
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: .5s;
+          font-family: "Abril Fatface", cursive;
+          font-size: 5.5em;
+          opacity: 0;
+          pointer-events: none;
+          z-index: -1; }
+        .sidebar ul li a:hover:before {
+          opacity: .2;
+          top: 50%; }
+
+.sidebar.active {
+  top: 0; }
+
+.hr-title {
+  width: 70px;
+  height: 4px;
+  background: #762124;
+  margin-left: 0%;
+  margin-right: 50%; }
+
+.hr-content {
+  width: 60px;
+  height: 2px;
+  margin-left: 0%;
+  margin-right: 50%; }
+
+footer {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  color: #636363; }
+  footer .w-hr {
+    margin: 2rem 0;
+    border-top: 1px solid #B3B3B3; }
+  footer .body-footer .sub-footer {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 3rem; }
+  footer .body-footer .social-media {
+    display: flex; }
+    footer .body-footer .social-media .social-container {
+      width: 46px;
+      height: 46px;
+      margin-right: 20px;
+      background: #762124;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      footer .body-footer .social-media .social-container .icon {
+        max-width: 20px;
+        max-height: 20px; }
+  footer .nav-footer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0; }
+    footer .nav-footer .iso-footer {
+      width: 60px;
+      margin-bottom: 3rem; }
+    footer .nav-footer .nav-footer-items {
+      display: flex;
+      justify-content: center; }
+      footer .nav-footer .nav-footer-items a {
+        color: #636363;
+        margin: 0 1.5rem;
+        font-size: 18px;
+        font-weight: 500;
+        transition: all .5s; }
+      footer .nav-footer .nav-footer-items a:hover {
+        color: #762124;
+        text-decoration: none; }
+  footer .powered {
+    text-align: right; }
+
+.footer-black {
+  background: #1E1E1E; }
+  .footer-black h4, .footer-black p, .footer-black footer .nav-footer-items a {
+    color: #B3B3B3; }
+
+.nav-red {
+  background: #762124; }
+
+.politica {
+  padding-top: 160px;
+  padding-bottom: 60px; }
+  .politica .title {
+    margin-bottom: 20px; }
+    .politica .title h1 {
+      color: #762124; }
+    .politica .title .hr-title {
+      background: #762124; }
+  .politica .content {
+    margin: 30px 0px; }
+    .politica .content h3 {
+      text-transform: uppercase;
+      color: #762124;
+      margin-bottom: 30px; }
+    .politica .content .hr-content {
+      background: #762124;
+      margin-top: 70px; }
+    .politica .content .numeration {
+      margin: 30px 0px; }
+      .politica .content .numeration .number {
+        height: 52px;
+        border-right: 2px solid #762124;
+        font-family: "Abril Fatface", cursive;
+        font-size: 37px;
+        color: #762124; }
+
+.equipo {
+  background: #762124; }
+  .equipo .item {
+    padding: 0 5rem; }
+  .equipo .team-text {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .equipo .team-text h2 {
+      font-size: 26px;
+      margin-bottom: 1.5rem; }
+    .equipo .team-text .hr-content {
+      background: #FFFFFF;
+      margin: 2rem 0; }
+    .equipo .team-text .firma {
+      margin-top: 2rem;
+      margin-right: 2rem;
+      max-width: 200px;
+      max-height: 150px;
+      align-self: flex-end; }
+
+.historia {
+  padding: 5rem 0; }
+  .historia .title {
+    margin-bottom: 3rem; }
+    .historia .title img {
+      width: 65px;
+      float: left;
+      margin-right: 20px; }
+    .historia .title h3 {
+      color: #636363; }
+  .historia .owl-historia .item {
+    text-align: center;
+    font-size: 14px; }
+    .historia .owl-historia .item .bubble1, .historia .owl-historia .item .bubble2 {
+      width: 18px;
+      height: 18px;
+      margin: 0 auto;
+      background: #762124;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+      position: relative; }
+      .historia .owl-historia .item .bubble1:before, .historia .owl-historia .item .bubble1::after, .historia .owl-historia .item .bubble2:before, .historia .owl-historia .item .bubble2::after {
+        content: '';
+        height: 1px;
+        background: #B3B3B3;
+        position: absolute;
+        top: 50%; }
+      .historia .owl-historia .item .bubble1:before, .historia .owl-historia .item .bubble2:before {
+        left: 200%; }
+      .historia .owl-historia .item .bubble1::after, .historia .owl-historia .item .bubble2::after {
+        right: 200%; }
+    .historia .owl-historia .item .bubble1:before, .historia .owl-historia .item .bubble1::after {
+      width: 1500%; }
+    .historia .owl-historia .item .bubble2:before, .historia .owl-historia .item .bubble2::after {
+      width: 700%; }
+    .historia .owl-historia .item p span {
+      font-weight: 500;
+      text-transform: uppercase; }
+  .historia .owl-historia .owl-nav {
+    font-size: 80px;
+    color: #762124;
+    position: relative;
+    bottom: 100px; }
+    .historia .owl-historia .owl-nav button {
+      position: absolute; }
+      .historia .owl-historia .owl-nav button:focus {
+        outline: 0; }
+      .historia .owl-historia .owl-nav button.owl-prev {
+        left: -6%; }
+      .historia .owl-historia .owl-nav button.owl-next {
+        right: -6%; }
+  .historia .owl-historia .owl-dots {
+    margin-top: 3rem;
+    text-align: center;
+    font-weight: 500; }
+    .historia .owl-historia .owl-dots button {
+      width: 150px;
+      height: 30px;
+      margin: 0 20px;
+      color: #636363;
+      transition: all .5s; }
+      .historia .owl-historia .owl-dots button.active {
+        color: #762124; }
+      .historia .owl-historia .owl-dots button:focus {
+        outline: 0; }
+    .historia .owl-historia .owl-dots button:nth-child(1):before {
+      content: 'Fundación 1990'; }
+    .historia .owl-historia .owl-dots button:nth-child(2):before {
+      content: '1990 - 2000'; }
+    .historia .owl-historia .owl-dots button:nth-child(3):before {
+      content: '2000 - 2010'; }
+    .historia .owl-historia .owl-dots button:nth-child(4):before {
+      content: '2010 - Actualidad'; }
+
+.viEmpresarial {
+  background: #1E1E1E;
+  color: #FFFFFF;
+  padding: 5rem 0; }
+  .viEmpresarial .content {
+    margin-top: 2rem; }
+  .viEmpresarial p {
+    margin: 1rem 0; }
+
+.indices {
+  padding: 5rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1; }
+  .indices .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .indices .content img {
+      max-height: 100px; }
+    .indices .content p {
+      font-size: 18px;
+      margin: 2rem 0;
+      font-weight: 500;
+      color: #636363; }
+    .indices .content .number {
+      font-family: "Abril Fatface", cursive;
+      font-size: 40px;
+      color: #1E1E1E; }
+  .indices .vertLine {
+    position: relative; }
+    .indices .vertLine::before, .indices .vertLine::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 60%;
+      background: #B3B3B3;
+      top: 16%; }
+    .indices .vertLine::before {
+      right: 0; }
+    .indices .vertLine::after {
+      left: 0; }
+
+.valoresCorp {
+  z-index: 2;
+  background: #762124;
+  color: #FFFFFF;
+  padding: 5rem 0; }
+  .valoresCorp hr {
+    background: #FFFFFF; }
+  .valoresCorp .hr-content {
+    margin: 2rem 0; }
+  .valoresCorp .content {
+    margin-top: 4rem; }
+    .valoresCorp .content h4 {
+      font-size: 22px;
+      text-transform: uppercase; }
+
+.equipoHumano {
+  padding: 5rem 0; }
+  .equipoHumano .title {
+    margin-bottom: 3rem;
+    color: #762124; }
+  .equipoHumano .owl-equipoHumano .item img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
+  .equipoHumano .owl-equipoHumano .item p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    color: #FFFFFF;
+    padding: .5rem;
+    background: #762124; }
+  .equipoHumano .owl-equipoHumano .owl-nav {
+    font-size: 80px;
+    color: #762124;
+    position: relative;
+    bottom: 250px; }
+    .equipoHumano .owl-equipoHumano .owl-nav button {
+      position: absolute; }
+      .equipoHumano .owl-equipoHumano .owl-nav button:focus {
+        outline: 0; }
+      .equipoHumano .owl-equipoHumano .owl-nav button.owl-prev {
+        left: -6%; }
+      .equipoHumano .owl-equipoHumano .owl-nav button.owl-next {
+        right: -6%; }
+  .equipoHumano .owl-equipoHumano .owl-dots {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 500; }
+    .equipoHumano .owl-equipoHumano .owl-dots button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin: 0 .3rem;
+      background: #636363;
+      transition: all .5s; }
+      .equipoHumano .owl-equipoHumano .owl-dots button.active {
+        background: #762124; }
+      .equipoHumano .owl-equipoHumano .owl-dots button:focus {
+        outline: 0; }
+
+@media (max-width: 1024px) {
+  .equipo .item {
+    padding: 0 2rem; }
+  .equipo .team-text h2 {
+    font-size: 22px;
+    margin-bottom: 1rem; }
+  .equipo .team-text .hr-title {
+    background: #FFFFFF;
+    margin: 1rem 0; }
+  .equipo .team-text h3 {
+    font-size: 18px; }
+  .equipo .team-text .firma {
+    max-width: 130px;
+    max-height: 80px;
+    margin-top: 1rem;
+    margin-right: 1rem; }
+
+  .historia .owl-historia .owl-nav {
+    bottom: 20px; }
+    .historia .owl-historia .owl-nav button {
+      position: absolute; }
+      .historia .owl-historia .owl-nav button:focus {
+        outline: 0; }
+      .historia .owl-historia .owl-nav button.owl-prev {
+        left: 45%; }
+      .historia .owl-historia .owl-nav button.owl-next {
+        right: 45%; } }
+@media (max-width: 992px) {
+  footer .body-footer .col-footer {
+    margin-bottom: 2.5rem; } }
+@media (max-width: 768px) {
+  .politica .content .numeration .number {
+    border-right: 0px solid #762124; }
+
+  .equipo .item {
+    margin-bottom: 2rem; }
+  .equipo .item-order {
+    order: 2; }
+
+  .historia .owl-historia .owl-dots button {
+    margin: 0px; }
+
+  footer .nav-footer .nav-footer-items {
+    flex-direction: column;
+    align-items: center; } }
+@media (max-width: 414px) {
+  h1 {
+    font-size: 30px;
+    letter-spacing: 2px; }
+
+  h3 {
+    font-size: 20px; }
+
+  .row {
+    margin: 0; }
+
+  .politica {
+    padding-top: 140px;
+    padding-bottom: 20px; }
+    .politica .title {
+      margin-bottom: 10px; }
+      .politica .title h1 {
+        color: #762124; }
+    .politica .content {
+      margin: 20px 0px; }
+      .politica .content .hr-content {
+        margin-top: 50px; }
+      .politica .content .numeration {
+        margin: 20px 0px; }
+
+  .equipo .item {
+    padding: 0 1rem; }
+
+  .historia .owl-historia .item {
+    text-align: center;
+    font-size: 14px; }
+    .historia .owl-historia .item .bubble1, .historia .owl-historia .item .bubble2 {
+      display: none; }
+    .historia .owl-historia .item p {
+      font-size: 14px; }
+  .historia .owl-historia .owl-nav {
+    position: relative;
+    bottom: -30px; }
+    .historia .owl-historia .owl-nav button {
+      position: absolute; }
+      .historia .owl-historia .owl-nav button.owl-prev {
+        left: 15%; }
+      .historia .owl-historia .owl-nav button.owl-next {
+        right: 15%; }
+  .historia .owl-historia .owl-dots {
+    text-align: center;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-top: 2rem; }
+    .historia .owl-historia .owl-dots button {
+      width: 200px;
+      height: 30px;
+      color: #636363;
+      transition: all .5s; }
+
+  .equipoHumano .owl-equipoHumano .owl-nav {
+    bottom: 35px; }
+    .equipoHumano .owl-equipoHumano .owl-nav button {
+      position: absolute; }
+      .equipoHumano .owl-equipoHumano .owl-nav button.owl-prev {
+        left: 2%; }
+      .equipoHumano .owl-equipoHumano .owl-nav button.owl-next {
+        right: 2%; }
+  .equipoHumano .owl-equipoHumano .owl-dots {
+    text-align: center;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-top: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */

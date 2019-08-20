@@ -1,0 +1,203 @@
+@media (max-width: 1024px){
+    .equipo{
+        .item{
+            padding: 0 2rem;
+        }
+        .team-text{
+            h2{
+                font-size: 22px;
+                margin-bottom: 1rem;
+            }
+            .hr-title{
+                background: #FFFFFF;
+                margin:1rem 0;
+            }
+            h3{
+                font-size: 18px;
+            }
+            .firma{
+                max-width: 130px;
+                max-height: 80px;
+                margin-top: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .historia{
+        .owl-historia{
+            .owl-nav{
+                bottom: 20px;
+                button{
+                    position: absolute;
+                    &:focus{
+                        outline:0;
+                    }
+                    &.owl-prev{
+                        left: 45%;
+                    }
+                    &.owl-next{
+                        right: 45%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    footer{
+        .body-footer{
+           .col-footer{
+               margin-bottom: 2.5rem;
+           }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .politica{
+        .content{
+            .numeration{
+                .number{
+                    border-right: 0px solid $red-valor;
+                }
+            }
+        }
+    }
+
+    .equipo{
+        .item{
+            margin-bottom: 2rem;
+        }
+        .item-order{
+            order: 2
+        }
+    }
+
+    .historia{
+        .owl-historia{
+            .owl-dots{
+                button{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+
+    footer{
+        .nav-footer{
+            .nav-footer-items{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px){
+    h1{
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    h3{
+        font-size: 20px;
+    }
+
+    .row{
+        margin: 0;
+    }
+
+    .politica{
+        padding-top: 140px;
+        padding-bottom: 20px;
+        .title{
+            margin-bottom: 10px;
+            h1{
+                color: $red-valor;
+            }
+        }
+        .content{
+            margin: 20px 0px;
+            .hr-content{
+                margin-top:50px;
+            }
+            .numeration{
+                margin: 20px 0px;
+            }
+        }
+    }
+
+    .equipo{
+        .item{
+            padding:0 1rem;
+        }
+    }
+
+    .historia{
+        .owl-historia{
+            .item{
+                text-align: center;
+                font-size: 14px;
+                .bubble1,.bubble2{
+                    display: none;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+            .owl-nav{
+                position: relative;
+                bottom: -30px;
+                button{
+                    position: absolute;
+
+                    &.owl-prev{
+                        left: 15%;
+                    }
+                    &.owl-next{
+                        right: 15%;
+                    }
+                }
+            }
+            .owl-dots{
+                text-align: center;
+                font-weight: 500;
+                padding: 0 20px;
+                margin-top: 2rem;
+                button{
+                    width: 200px;
+                    height: 30px;
+                    color: $gray1-valor;
+                    transition: all .5s;
+                }
+            }
+        }
+    }
+
+    .equipoHumano{
+        .owl-equipoHumano{
+            .owl-nav{
+                bottom: 35px;
+                button{
+                    position: absolute;
+                    &.owl-prev{
+                        left: 2%;
+                        
+                    }
+                    &.owl-next{
+                        right: 2%;
+                    }
+                }
+            }
+            .owl-dots{
+                text-align: center;
+                font-weight: 500;
+                padding: 0 20px;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
