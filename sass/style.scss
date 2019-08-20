@@ -2,7 +2,9 @@
 $title-font: 'Abril Fatface', cursive;
 $text-font: 'Poppins', sans-serif;
 
-$red-valor: #762124;
+// $red-valor: #762124;
+$red-valor: #a00d0d;
+$red-valor-trans: rgba(160, 13, 13, 0.8);
 $gray1-valor: #636363;
 $gray2-valor: #B3B3B3;
 $gray3-valor: #F5F5F5;
@@ -271,4 +273,5 @@ footer{
 
 
 @import 'nosotros';
+@import 'proyectos';
 @import 'responsive';
