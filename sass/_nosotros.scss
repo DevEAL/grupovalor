@@ -3,7 +3,7 @@
 }
 
 .politica{
-    padding-top: 160px;
+    padding-top: 180px;
     padding-bottom: 60px;
     .title{
         margin-bottom: 20px;
@@ -40,6 +40,9 @@
 
 .equipo{
     background: $red-valor;
+    .team-photo{
+        text-align: center;
+    }
     .item{
         padding: 0 5rem;
     }
@@ -84,7 +87,7 @@
         .item{
             text-align: center;
             font-size: 14px;
-            .bubble1,.bubble2{
+            .bubble1,.bubble2,.bubble3{
                 width: 18px;
                 height: 18px;
                 margin: 0 auto;
@@ -114,6 +117,11 @@
             .bubble2{
                 &:before, &::after{
                     width: 700%;
+                }
+            }
+            .bubble3{
+                &:before, &::after{
+                    width: 800%;
                 }
             }
             p{
@@ -159,7 +167,7 @@
                 }
             }
             button:nth-child(1):before{
-                content: 'Fundación 1990';
+                content: '1984 - 1990';
             }
             button:nth-child(2):before{
                 content: '1990 - 2000';
@@ -168,7 +176,10 @@
                 content: '2000 - 2010';
             }
             button:nth-child(4):before{
-                content: '2010 - Actualidad';
+                content: '2010 - 2015';
+            }
+            button:nth-child(5):before{
+                content: '2015 - Actualidad';
             }
         }
     }

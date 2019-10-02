@@ -1,0 +1,45 @@
+.nav-red{
+    background: $red-valor;
+}
+
+.novedades-title{
+    padding-top: 180px;
+    padding-bottom: 60px;
+    .title{
+        margin-bottom: 20px;
+        h1{
+            color: $red-valor;
+        }
+        .hr-title{
+            background: $red-valor;
+        }
+    }
+}
+
+.novedades{
+    .gray-content{
+        background: $gray3-valor;
+    }
+    .white-content{
+        background: #fff;
+        margin-top: 1rem;
+        margin-bottom: 1rem; 
+    }
+    .img-novedades,.content-novedades{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .img-novedades{
+        filter: grayscale(100%);
+    }
+    .content-novedades{
+        color: $gray1-valor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h5{
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+    }
+}

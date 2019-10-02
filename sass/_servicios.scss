@@ -1,0 +1,68 @@
+.nav-red{
+    background: $red-valor;
+}
+
+.servicios-title{
+    padding-top: 180px;
+    padding-bottom: 3rem;
+    .title{
+        margin-bottom: 20px;
+        h1{
+            color: $red-valor;
+        }
+        .hr-title{
+            background: $red-valor;
+        }
+    }
+}
+
+.servicios{
+    padding-bottom: 2rem;
+    .tab-col{
+        position: relative;
+        .btn-tab{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            cursor: pointer;
+            .title-tab{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 30px;
+                    max-height: 30px;
+                }
+                h5{
+                    margin: 0;
+                    margin-left: 2rem;
+                    color: $red-valor;
+                    text-transform: uppercase;
+                }
+            }
+            .icon-tab{
+                width: 10px;
+                transform: rotate(90deg);
+            }
+        }
+
+        .content-tab{
+            padding:2rem 4.5rem;
+            h6{
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+        }
+        hr{
+            padding-top: .1rem;
+            width: 85%;
+            margin: 0;
+            border: 0;
+            border-top: 1px solid $red-valor;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

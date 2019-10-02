@@ -4,47 +4,21 @@ $(document).ready(function(){
         $('.sidebar').toggleClass('active');
     })
 
-    $('.owl-historia').owlCarousel({
-        loop:true,
-        margin:10,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true,
-        stagePadding:0,
-        nav:true,
-        responsive:{
-            300:{
-                items:1,
-            }
-        }
-    });
 
     $('#initial').click(function(){
         $(this).css('opacity','0');
-        setTimeout(function(){
+        setTimeout(()=>{
             $('#initial').css('display','none');
             $('footer').attr('style','display:block;');
         },1500);
     });
 
-    $('.owl-equipoHumano').owlCarousel({
-        loop:true,
-        margin:10,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true,
-        stagePadding:0,
-        nav:true,
-        responsive:{
-            300:{
-                items:1,
-            },
-            600:{
-                items:2,
-            },
-            900:{
-                items:3,
-            }
-        }
+
+    let cw = $('.proyects-cont .item').width();
+    $('.proyects-cont .item').css({'height':cw+'px'});
+    $(window).resize(function() {
+        let cw = $('.proyects-cont .item').width();
+        $('.proyects-cont .item').css({'height':cw+'px'});
     });
+    
 })
