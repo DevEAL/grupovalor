@@ -218,7 +218,17 @@ footer {
     .politica .title .hr-title {
       background: #762124; }
   .politica .content {
-    margin: 30px 0px; }
+    margin: 30px 0px;
+    /*.numeration{
+        margin: 30px 0px;
+        .number{
+            height: 52px;
+            border-right: 2px solid $red-valor;
+            font-family: $title-font;
+            font-size: 37px;
+            color: $red-valor;
+        }
+    }*/ }
     .politica .content h3 {
       text-transform: uppercase;
       color: #762124;
@@ -226,17 +236,50 @@ footer {
     .politica .content .hr-content {
       background: #762124;
       margin-top: 70px; }
-    .politica .content .numeration {
-      margin: 30px 0px; }
-      .politica .content .numeration .number {
-        height: 52px;
-        border-right: 2px solid #762124;
-        font-family: "Abril Fatface", cursive;
-        font-size: 37px;
-        color: #762124; }
+
+.logos {
+  text-align: center;
+  padding: 60px 0; }
+  .logos .logo-valor {
+    width: 300px; }
+  .logos .title {
+    opacity: .4;
+    margin-top: 2rem; }
+    .logos .title h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 1px; }
+  .logos .owl-logos-one, .logos .owl-logos-two {
+    margin-bottom: 1rem; }
+    .logos .owl-logos-one .item .cont-img img, .logos .owl-logos-two .item .cont-img img {
+      margin: 0 auto;
+      opacity: .4;
+      width: 200px;
+      height: auto; }
+    .logos .owl-logos-one .owl-dots, .logos .owl-logos-two .owl-dots {
+      margin-top: 2rem;
+      text-align: center;
+      font-weight: 500; }
+      .logos .owl-logos-one .owl-dots button, .logos .owl-logos-two .owl-dots button {
+        background: #636363;
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        margin: 0 8px;
+        opacity: .5;
+        transition: all .5s; }
+        .logos .owl-logos-one .owl-dots button.active, .logos .owl-logos-one .owl-dots button:hover, .logos .owl-logos-two .owl-dots button.active, .logos .owl-logos-two .owl-dots button:hover {
+          opacity: 1; }
+        .logos .owl-logos-one .owl-dots button:focus, .logos .owl-logos-two .owl-dots button:focus {
+          outline: 0; }
 
 .equipo {
   background: #762124; }
+  .equipo .title {
+    color: #FFFFFF;
+    padding: 5rem 0; }
+    .equipo .title hr {
+      background: #FFFFFF; }
   .equipo .team-photo {
     text-align: center; }
   .equipo .item {
@@ -260,10 +303,13 @@ footer {
       align-self: flex-end; }
 
 .historia {
+  background: #F5F5F5;
   padding: 5rem 0; }
   .historia .title {
     margin-bottom: 3rem;
     height: 100%; }
+    .historia .title h1 {
+      color: #762124; }
     .historia .title img {
       width: 60px;
       float: left;
@@ -273,7 +319,7 @@ footer {
   .historia .owl-historia .item {
     text-align: center;
     font-size: 14px; }
-    .historia .owl-historia .item .bubble1, .historia .owl-historia .item .bubble2, .historia .owl-historia .item .bubble3 {
+    .historia .owl-historia .item .bubble, .historia .owl-historia .item .bubble1, .historia .owl-historia .item .bubble2, .historia .owl-historia .item .bubble3 {
       width: 18px;
       height: 18px;
       margin: 0 auto;
@@ -281,16 +327,18 @@ footer {
       border-radius: 50%;
       margin-bottom: 2rem;
       position: relative; }
-      .historia .owl-historia .item .bubble1:before, .historia .owl-historia .item .bubble1::after, .historia .owl-historia .item .bubble2:before, .historia .owl-historia .item .bubble2::after, .historia .owl-historia .item .bubble3:before, .historia .owl-historia .item .bubble3::after {
+      .historia .owl-historia .item .bubble:before, .historia .owl-historia .item .bubble::after, .historia .owl-historia .item .bubble1:before, .historia .owl-historia .item .bubble1::after, .historia .owl-historia .item .bubble2:before, .historia .owl-historia .item .bubble2::after, .historia .owl-historia .item .bubble3:before, .historia .owl-historia .item .bubble3::after {
         content: '';
         height: 1px;
         background: #B3B3B3;
         position: absolute;
         top: 50%; }
-      .historia .owl-historia .item .bubble1:before, .historia .owl-historia .item .bubble2:before, .historia .owl-historia .item .bubble3:before {
+      .historia .owl-historia .item .bubble:before, .historia .owl-historia .item .bubble1:before, .historia .owl-historia .item .bubble2:before, .historia .owl-historia .item .bubble3:before {
         left: 200%; }
-      .historia .owl-historia .item .bubble1::after, .historia .owl-historia .item .bubble2::after, .historia .owl-historia .item .bubble3::after {
+      .historia .owl-historia .item .bubble::after, .historia .owl-historia .item .bubble1::after, .historia .owl-historia .item .bubble2::after, .historia .owl-historia .item .bubble3::after {
         right: 200%; }
+    .historia .owl-historia .item .bubble:before, .historia .owl-historia .item .bubble::after {
+      width: 3000%; }
     .historia .owl-historia .item .bubble1:before, .historia .owl-historia .item .bubble1::after {
       width: 1500%; }
     .historia .owl-historia .item .bubble2:before, .historia .owl-historia .item .bubble2::after {
@@ -300,6 +348,17 @@ footer {
     .historia .owl-historia .item p span {
       font-weight: 500;
       text-transform: uppercase; }
+    .historia .owl-historia .item .mutis {
+      margin-bottom: 1rem; }
+      .historia .owl-historia .item .mutis h4, .historia .owl-historia .item .mutis h5 {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #762124; }
+      .historia .owl-historia .item .mutis h5 {
+        font-size: 20px; }
+      .historia .owl-historia .item .mutis p {
+        margin: 0; }
   .historia .owl-historia .owl-nav {
     font-size: 80px;
     color: #762124;
@@ -320,7 +379,7 @@ footer {
     .historia .owl-historia .owl-dots button {
       width: 150px;
       height: 30px;
-      margin: 0 20px;
+      margin: 0 5px;
       color: #636363;
       transition: all .5s; }
       .historia .owl-historia .owl-dots button.active {
@@ -336,22 +395,36 @@ footer {
     .historia .owl-historia .owl-dots button:nth-child(4):before {
       content: '2010 - 2015'; }
     .historia .owl-historia .owl-dots button:nth-child(5):before {
-      content: '2015 - Actualidad'; }
+      content: '2015 - 2018'; }
+    .historia .owl-historia .owl-dots button:nth-child(6):before {
+      content: '2018 - Actualidad'; }
 
-.viEmpresarial {
-  background: #1E1E1E;
-  color: #FFFFFF;
-  padding: 5rem 0; }
-  .viEmpresarial .content {
-    margin-top: 2rem; }
-  .viEmpresarial p {
-    margin: 1rem 0; }
-
+/*.viEmpresarial{
+    background: $gray4-valor;
+    color: #FFFFFF;
+    padding: 5rem 0;
+    .content{
+        margin-top: 2rem;
+    }
+    p{
+        margin: 1rem 0;
+    }
+}*/
 .indices {
   padding: 5rem 0;
   text-align: center;
   text-transform: uppercase;
   z-index: 1; }
+  .indices .title {
+    margin-bottom: 3rem;
+    height: 100%; }
+    .indices .title img {
+      width: 60px;
+      float: left;
+      margin-right: 20px; }
+    .indices .title h3 {
+      text-align: left;
+      color: #636363; }
   .indices .content {
     height: 100%;
     display: flex;
@@ -382,21 +455,25 @@ footer {
     .indices .vertLine::after {
       left: 0; }
 
-.valoresCorp {
-  z-index: 2;
-  background: #762124;
-  color: #FFFFFF;
-  padding: 5rem 0; }
-  .valoresCorp hr {
-    background: #FFFFFF; }
-  .valoresCorp .hr-content {
-    margin: 2rem 0; }
-  .valoresCorp .content {
-    margin-top: 4rem; }
-    .valoresCorp .content h4 {
-      font-size: 22px;
-      text-transform: uppercase; }
-
+/*.valoresCorp{
+    z-index: 2;
+    background: $red-valor;
+    color: #FFFFFF;
+    padding: 5rem 0;
+    hr{
+        background: #FFFFFF;
+    }
+    .hr-content{
+        margin: 2rem 0;
+    }
+    .content{
+        margin-top: 4rem;
+        h4{
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+    }
+}*/
 .equipoHumano {
   padding: 5rem 0; }
   .equipoHumano .title {
