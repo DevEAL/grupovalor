@@ -1,0 +1,313 @@
+[
+    {
+        "id":"0",
+        "idName":"comercializacion",
+        "section":"Comercialización",
+        "imgSection":"background-image: url('img/Proyectos/Comercializacion/33_dc/small_1.jpg');",
+        "quantity":"8 Proyectos en venta",
+        "citys":[
+            "Bogotá D.C.",
+            "Cartagena",
+            "Santa Marta",
+            "Bucaramanga"
+        ],
+        "squareMeter":"Más de 116.000 m<sup>2</sup> por construirse",
+        "link":"comercializacion.html",
+        "proyects":[
+            {
+                "id":"0",
+                "img":"Comercializacion/Turpial/small_1.jpg",
+                "name":"Reserva del Turpial",
+                "country":"Bogotá D.C.",
+                "address":"Cerca a iglesia 20 de Julio",
+                "description": "Reserva del Turpial es nuestro nuevo proyecto en la San Blas. Visita nuestra sala de ventas muy cerca de la plaza e iglesia del 20 de Julio.",
+                "stage":["Torre 1"],
+                "area":"40.5 M2 y 49.5 construidos - 34.6 7 44.1 M2 privada.",
+                "zonas":[{}],
+                "note":[],
+                "images":["Comercializacion/Turpial/1.jpg","Comercializacion/Turpial/2.jpg","Comercializacion/Turpial/3.jpg","Comercializacion/Turpial/4.jpg"],
+                "imgBox":["Comercializacion/Turpial/small_1.jpg","Comercializacion/Turpial/small_2.jpg","Comercializacion/Turpial/small_3.jpg","Comercializacion/Turpial/small_4.jpg"],
+                "website":"www.reservadelturpial.com",
+                "mail":"jefedesala@grupovalor.com.co",
+                "phone":[],
+                "cellPhone":["318 531 0059","316 833 5483"]
+            },
+            {
+                "id":"1",
+                "img":"Comercializacion/Valenti/small_1.jpg",
+                "name":"Valenti",
+                "country":"Bogotá D.C.",
+                "address":"Carrera 93 no. 54 – 28. Bosa el Porvenir",
+                "description": "VALENTI apartamentos es un nuevo proyecto que llega a Bosa - El Porvenir para transformar la manera de vivir, con zonas comunes, espacios que darán a las familias momentos llenos de felicidad y ubicación privilegiada en la localidad.",
+                "stage":[
+                    "257 apartamentos- 20 pisos",
+                    "257 apartamentos- 20 pisos"
+                ],
+                "area":"45 M2 construidos - 40 M2 privada.",
+                "zonas":[
+                    {
+                        "comunes":"Spa para mascotas- Lavandería comunal - Taller de bicicletas- Terrazas BBQ y huerta- Cocina comunal- Gimnasio- Guardería infantil- Sala de juegos - Sala de estudio"
+                    }
+                ],
+                "note":[],
+                "images":["Comercializacion/Valenti/1.jpg","Comercializacion/Valenti/2.jpg","Comercializacion/Valenti/3.jpg"],
+                "imgBox":["Comercializacion/Valenti/small_1.jpg","Comercializacion/Valenti/small_2.jpg","Comercializacion/Valenti/small_3.jpg"],
+                "website":"http://proyectovalenti.com/",
+                "mail":"jefe.valenti@grupovalor.com.co",
+                "phone":["6956523","6956565"],
+                "cellPhone":["316 866 2142"]
+            },
+            {
+                "id":"2",
+                "img":"Comercializacion/33_dc/small_1.jpg",
+                "name":"33 DC",
+                "country":"Bogotá D.C.",
+                "address":"Avenida caracas no. 33 – 50",
+                "description": "33 DC está en una de las zonas con mayor desarrollo de la ciudad, localizado en un sitio con fácil acceso a las mejores universidades de Colombia y en medio de un destacado centro empresarial. 517 residencias estudiantiles - 105 apartamentos de vivienda.",
+                "stage":[],
+                "area":"",
+                "zonas":[
+                    {
+                        "esparcimiento":"Spa para mascotas - Lavandería comunal - Taller de bicicletas - Terrazas BBQ y huerta - Cocina comunal - Gimnasio - Guardería infantil - Sala de juegos - Sala de estudio"
+                    },
+                    {
+                        "servicio":"Zonas comerciales 3 Niveles de parqueadero, y 1 Sótano*, Lavandería*, Taller de Bicicletas, Vending Machines*, Lobby, Oratorio, Parqueaderos públicos*"
+                    },
+                    {
+                        "estudio":"Zona de plotter*, Taller de arte, Salas de estudio, Lounge de computadores, Salas audiovisuales."
+                    }
+                ],
+                "note":[
+                    "Las zonas señaladas con asterisco hacen parte de las zonas gestionadas por el operador del proyecto. Los ingresos que se generen harán parte de la bolsa económica del proyecto de residencias, que si es positivo, será distribuido entre los propietarios de las unidades",
+                    " Nota: Los locales comerciales, cafetería, gimnasio y la terraza del último piso, son bienes privados administrados por terceros por ende, NO son zonas comunes de la Copropiedad."
+                ],
+                "images":["Comercializacion/33_dc/1.jpg"],
+                "imgBox":["Comercializacion/33_dc/small_1.jpg"],
+                "website":"http://33dc.com.co/",
+                "mail":"smunoz@estrategiascomerciales.co",
+                "phone":["9277613"],
+                "cellPhone":["312 433 2986"]
+            },
+            {
+                "id":"3",
+                "img":"Comercializacion/Moratto_44/small_1.jpg",
+                "name":"Moratto 44",
+                "country":"Bucaramanga",
+                "address":"Calle 44 n 38 11",
+                "description": "MORATTO 44 aporta al medio ambiente y a la calidad de vida de sus residentes porque su concepción está basada integralmente en construcción sostenible, por eso su proceso de certificación LEED. 41 apartamentos que ofrecen las bondades de vivir en un entorno tecnificado y diseñado para el bienestar.",
+                "stage":[],
+                "area":"",
+                "zonas":[{}],
+                "note":[],
+                "images":["Comercializacion/Moratto_44/1.jpg","Comercializacion/Moratto_44/2.jpg","Comercializacion/Moratto_44/3.jpg","Comercializacion/Moratto_44/4.jpg"],
+                "imgBox":["Comercializacion/Moratto_44/small_1.jpg","Comercializacion/Moratto_44/small_2.jpg","Comercializacion/Moratto_44/small_3.jpg","Comercializacion/Moratto_44/small_4.jpg"],
+                "website":"http://www.moratto44apartamentos.com",
+                "mail":"info@moratto44apartamentos.com",
+                "phone":["(57 1) 9277613"],
+                "cellPhone":[]
+            },
+            {
+                "id":"4",
+                "img":"Comercializacion/Irotama/small_1.jpg",
+                "name":"Irotama Reservado",
+                "country":"Santa Marta",
+                "address":"Pozos Colorados. Dentro del complejo de Irotama Resort. ",
+                "description": "Ubicado en una zona especial de Cartagena con gran desarrollo, oferta variada de servicios y bella vista del resto de la ciudad, los apartamentos del proyecto tendrán alta valorización. El complejo ofrece muchas amenidades predominando un amplio sector verde para diferentes actividades familiares.",
+                "stage":[],
+                "area":"",
+                "zonas":[{}],
+                "note":[],
+                "images":["Comercializacion/Irotama/1.jpg","Comercializacion/Irotama/2.jpg","Comercializacion/Irotama/3.jpg","Comercializacion/Irotama/4.jpg"],
+                "imgBox":["Comercializacion/Irotama/small_1.jpg","Comercializacion/Irotama/small_2.jpg","Comercializacion/Irotama/small_3.jpg","Comercializacion/Irotama/small_4.jpg"],
+                "website":"http://www.irotamareservado.com/",
+                "mail":"",
+                "phone":["(57 1) 610 7001"],
+                "cellPhone":["314 458 2037"]
+            },
+            {
+                "id":"5",
+                "img":"Comercializacion/Studio_106/small_1.jpg",
+                "name":"Studio 106",
+                "country":"Bogotá D.C.",
+                "address":"Bogotá D.C.",
+                "description": "Localizado estratégicamente con altísima conectividad urbana, su concepción es el “BUEN VIVIR”, así que todos sus apartamentos tienen vista al exterior, cuenta con un gimnasio semiabierto, una zona húmeda de las mejores especificaciones y una cubierta única para disfrutar al aire libre en familia.",
+                "stage":[],
+                "area":"",
+                "zonas":[{}],
+                "note":[],
+                "images":["Comercializacion/Studio_106/1.jpg","Comercializacion/Studio_106/2.jpg","Comercializacion/Studio_106/3.jpg"],
+                "imgBox":["Comercializacion/Studio_106/small_1.jpg","Comercializacion/Studio_106/small_2.jpg","Comercializacion/Studio_106/small_3.jpg"],
+                "website":"http://www.studio106.co/",
+                "mail":"",
+                "phone":[ "610 7001"],
+                "cellPhone":["314 470 5700","313 458 1337"]
+            },
+            {
+                "id":"6",
+                "img":"Comercializacion/P_castellana/small_1.jpg",
+                "name":"Parque de la castellana",
+                "country":"Cartagena",
+                "address":"Av. Pedro de Heredia N° 68 – 127 ",
+                "description": "Ubicado en una zona especial de Cartagena con gran desarrollo, oferta variada de servicios y bella vista del resto de la ciudad, los apartamentos del proyecto tendrán alta valorización. El complejo ofrece muchas amenidades predominando un amplio sector verde para diferentes actividades familiares.",
+                "stage":[],
+                "area":"",
+                "zonas":[{}],
+                "note":[],
+                "images":["Comercializacion/P_castellana/1.jpg","Comercializacion/P_castellana/2.jpg","Comercializacion/P_castellana/3.jpg"],
+                "imgBox":["Comercializacion/P_castellana/small_1.jpg","Comercializacion/P_castellana/small_2.jpg","Comercializacion/P_castellana/small_3.jpg"],
+                "website":"",
+                "mail":"",
+                "phone":[],
+                "cellPhone":[]
+            },
+            {
+                "id":"7",
+                "img":"Comercializacion/Morari_105/small_1.jpg",
+                "name":"Morari 105",
+                "country":"Cartagena",
+                "address":"Av. Pedro de Heredia N° 68 – 127 ",
+                "description": "Ubicado en una zona especial de Cartagena con gran desarrollo, oferta variada de servicios y bella vista del resto de la ciudad, los apartamentos del proyecto tendrán alta valorización. El complejo ofrece muchas amenidades predominando un amplio sector verde para diferentes actividades familiares.",
+                "stage":[],
+                "area":"",
+                "zonas":[{}],
+                "note":[],
+                "images":["Comercializacion/Morari_105/1.jpg","Comercializacion/Morari_105/2.jpg","Comercializacion/Morari_105/3.jpg","Comercializacion/Morari_105/4.jpg"],
+                "imgBox":["Comercializacion/Morari_105/small_1.jpg","Comercializacion/Morari_105/small_2.jpg","Comercializacion/Morari_105/small_3.jpg","Comercializacion/Morari_105/small_4.jpg"],
+                "website":"",
+                "mail":"",
+                "phone":[""],
+                "cellPhone":[""]
+            }
+        ]
+    },
+    {
+        "id":"1",
+        "idName":"ejecucion",
+        "section":"Ejecución",
+        "imgSection":"background-image: url('img/Proyectos/Ejecucion/Baia_138/small_1.jpg');",
+        "quantity":"3 Proyectos en ejecución",
+        "citys":[
+            "Bogotá D.C.",
+            "Ricaurte"
+        ],
+        "squareMeter":"33.000 m<sup>2</sup> &nbsp; de áreas comerciales y 5.000 m<sup>2</sup> de hotel",
+        "proyects":[
+            {
+                "id":"0",
+                "img":"Ejecucion/Baia_138/small_1.jpg",
+                "name":"Baia 138",
+                "country":"Bogotá D.C.",
+                "address":"Calle 138 No. 11B-50",
+                "description": "Apartamentos ubicados “A UN PASO DE TODO”. Su localización estratégica ofrece variados servicios a poca distancia sin dejar a un lado las bondades de vivir en calle cerrada de bajo tráfico. Su primer piso de servicios comunes se complementa con su cubierta verde, pista atlética de 100 m y zonas de BBQ.",
+                "stage":[],
+                "area":"",
+                "zonas":[{}],
+                "note":"",
+                "images":["Ejecucion/Baia_138/1.jpg","Ejecucion/Baia_138/2.jpg","Ejecucion/Baia_138/3.jpg","Ejecucion/Baia_138/4.jpg"],
+                "imgBox":["Ejecucion/Baia_138/small_1.jpg","Ejecucion/Baia_138/small_2.jpg","Ejecucion/Baia_138/small_3.jpg","Ejecucion/Baia_138/small_4.jpg"],
+                "website":"",
+                "mail":"",
+                "phone":[""],
+                "cellPhone":[""]
+            },
+            {
+                "id":"1",
+                "img":"Ejecucion/Portal_41/small_1.jpg",
+                "name":"Portal de la 41",
+                "country":"Santa Marta",
+                "address":"Carrera 13 n 40c 10/20 ",
+                "description": "Su arquitectura fue concebida para residencias estudiantiles principalmente. En primer piso se encuentra el lobby y otras zonas de servicio común, y un sótano con lavandería comunal, administración y parqueaderos para vehículos y bicicletas. 78 apartamentos de 30 a 65 m2, desde una a tres alcobas.",
+                "stage":[],
+                "area":"",
+                "zonas":[{}],
+                "note":"",
+                "images":["Ejecucion/Portal_41/1.jpg","Ejecucion/Portal_41/2.jpg","Ejecucion/Portal_41/3.jpg","Ejecucion/Portal_41/4.jpg"],
+                "imgBox":["Ejecucion/Portal_41/small_1.jpg","Ejecucion/Portal_41/small_2.jpg","Ejecucion/Portal_41/small_3.jpg","Ejecucion/Portal_41/small_4.jpg"],
+                "website":"",
+                "mail":"",
+                "phone":[""],
+                "cellPhone":[""]
+            },
+            {
+                "id":"2",
+                "img":"Ejecucion/Penalisa_mall/small_1.jpg",
+                "name":"Peñalisa Mall",
+                "country":"Girardot",
+                "address":"Girardot",
+                "description": "Con 33.000 m2 y más de 90 locales, Peñalisa Mall es uno de los proyectos más importantes de Ricaurte. Este ofrece múltiples posibilidades de descanso, entretenimiento y diversión pues su master plan vincula el centro comercial, 70 apartamentos y 130 suites, hotel que será operado por Best Western.",
+                "stage":[],
+                "area":"",
+                "zonas":[{}],
+                "note":"",
+                "images":["Ejecucion/Penalisa_mall/1.jpg","Ejecucion/Penalisa_mall/2.jpg","Ejecucion/Penalisa_mall/3.jpg"],
+                "imgBox":["Ejecucion/Penalisa_mall/small_1.jpg","Ejecucion/Penalisa_mall/small_2.jpg","Ejecucion/Penalisa_mall/small_3.jpg"],
+                "website":"",
+                "mail":"",
+                "phone":[""],
+                "cellPhone":[""]
+            } 
+        ]
+    },
+    {
+        "id":"2",
+        "idName":"realizados",
+        "section":"Realizados",
+        "imgSection":"background-image: url('img/Proyectos/Realizados/Jazz/small_1.jpg');",
+        "quantity":"6 Proyectos realizados",
+        "citys":[
+            "Bogotá D.C.",
+            "Barranquilla"
+        ],
+        "squareMeter":"250.000 m<sup>2</sup> construidos en los ultimos 3 años",
+        "proyects":[
+            {
+                "id":"0",
+                "img":"Realizados/Belalcazar/small_1.jpg",
+                "name":"Portal de belalcazar",
+                "country":"Bogotá D.C.",
+                "address":"Carrera 30 N° 48 – 30",
+                "execution":"Mayo 2009 - Mayo 2011"
+            },
+            {
+                "id":"1",
+                "img":"Realizados/Sierra_este/small_1.jpg",
+                "name":"Sierra del este",
+                "country":"Bogotá D.C.",
+                "address":"Calle 45 – Carrera 6ª y 7ª",
+                "execution":"Marzo 2007 - Julio 2008"
+            },
+            {
+                "id":"2",
+                "img":"Realizados/P_javeriana/small_1.jpg",
+                "name":"Portal de la Javeriana",
+                "country":"Bogotá D.C.",
+                "address":"Carrera 4 Este No. 61-05",
+                "execution":"Junio 2008 - Agosto 2010"
+            },
+            {
+                "id":"3",
+                "img":"Realizados/Jazz/small_1.jpg",
+                "name":"Jazz apartments",
+                "country":"Bogotá D.C.",
+                "address":"Calle 87 N° 15 – 35",
+                "execution":"Marzo de 2007 – Julio de 2008"
+            },
+            {
+                "id":"4",
+                "img":"Realizados/Santorini/small_1.jpg",
+                "name":"Villa Santorini",
+                "country":"Bogotá D.C.",
+                "address":"Carrera 56 No. 167C-03",
+                "execution":"Diciembre de 2008"
+            },
+            {
+                "id":"5",
+                "img":"Realizados/Estelar_alto_prado/small_1.jpg",
+                "name":"Hotel estelar alto prado",
+                "country":"Barranquilla",
+                "address":"Calle 76 N° 56 – 29",
+                "execution":"Junio de 2009 – Marzo 2011"
+            }
+        ]
+    }
+]

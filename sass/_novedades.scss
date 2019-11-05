@@ -26,11 +26,14 @@
         margin-bottom: 1rem; 
     }
     .img-novedades,.content-novedades{
+        // width: 100%;
         padding-left: 6rem;
         padding-right: 6rem;
+        
     }
     .img-novedades{
         filter: grayscale(100%);
+        img{ width: 100;}
     }
     .content-novedades{
         color: $gray1-valor;
@@ -40,6 +43,10 @@
         h5{
             text-transform: uppercase;
             margin-bottom: 2rem;
+        }
+        a{
+            text-align: center;
+            margin-top: 2rem;
         }
     }
 }

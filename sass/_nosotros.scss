@@ -2,8 +2,8 @@
     background: $red-valor;
 }
 
-.politica{
-    padding-top: 180px;
+.quienes-somos, .politica{
+    padding-top: 60px;
     padding-bottom: 60px;
     .title{
         margin-bottom: 20px;
@@ -25,26 +25,25 @@
             background: $red-valor;
             margin-top:70px;
         }
-        /*.numeration{
-            margin: 30px 0px;
-            .number{
-                height: 52px;
-                border-right: 2px solid $red-valor;
-                font-family: $title-font;
-                font-size: 37px;
-                color: $red-valor;
-            }
-        }*/
+    }
+}
+
+.quienes-somos{
+    padding-top: 180px;
+    .content{
+        margin-top: 30px;
+        margin-bottom: 0;
+        p{margin: 0;}
     }
 }
 
 .logos{
     text-align: center;
     padding: 60px 0;
-    .logo-valor{
-        width: 300px;;
+    .logo-valor{ 
+        width: 450px;
+        margin-bottom: 4rem;
     }
-
     .title{
         opacity: .4;
         margin-top: 2rem;
@@ -67,6 +66,20 @@
                     
                 }
             }
+        }
+        .owl-nav{
+            position: relative;
+            bottom: 150px;
+            .owl-prev, .owl-next{  
+                position: absolute;
+                &:focus{ outline: none; }
+                span{
+                    font-size: 80px; 
+                    color: $gray1-valor;
+                }
+            }
+            .owl-prev{ left: 0;}
+            .owl-next{ right: 0;}
         }
         .owl-dots{
             margin-top: 2rem;
@@ -130,8 +143,11 @@
 }
 
 .historia{
+    box-sizing: border-box;
+    position: relative;
     background: $gray3-valor;
     padding: 5rem 0;
+    height: 1000px;
     .title{
         margin-bottom: 3rem;
         height: 100%;
@@ -147,6 +163,36 @@
             color: $gray1-valor;
         }
     }
+    .outer-wrapper{
+        width: 100vh;
+        // height: 100vw;
+        // height: 400px;
+        transform: rotate(-90deg) translateX(-100vh);
+        transform-origin: top left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: relative;
+        .wraper{
+            display: flex;
+            flex-direction: row;
+            width: 300vw;
+            height: 100vw;
+            transform: rotate(90deg) translateY(-100vh);
+            transform-origin: top left;
+            .slide{
+                height: 700px;
+                width: 100vw;
+                &.one{ background-image: (url('../img/Timeline/slide_1.jpg')); }
+                &.two{ background-image: (url('../img/Timeline/slide_2.jpg'));  }
+                &.three{ background-image: (url('../img/Timeline/slide_3.jpg')); }
+                &.one, &.two, &.three{
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+
     .owl-historia{
         .item{
             text-align: center;
@@ -270,20 +316,8 @@
     }
 }
 
-/*.viEmpresarial{
-    background: $gray4-valor;
-    color: #FFFFFF;
-    padding: 5rem 0;
-    .content{
-        margin-top: 2rem;
-    }
-    p{
-        margin: 1rem 0;
-    }
-}*/
-
 .indices{
-    // background: $gray3-valor;
+    background: $gray3-valor;
     .title{
         margin-bottom: 3rem;
         height: 100%;
@@ -318,7 +352,9 @@
         .number{
             font-family: $title-font;
             font-size: 40px;
+            text-transform: lowercase;
             color: $gray4-valor;
+            .odometer{ display: inline-block; }
         }
     }
     

@@ -37,6 +37,8 @@ $(document).ready(function(){
         }
     }
 
+
+
    
     cargarJSON = () => {
     // fetch('https://motoraidadventure.com/proyects.json')
@@ -50,6 +52,18 @@ $(document).ready(function(){
             let helper = data[obtId.id].proyects[obtId.prId];
             let imgProject = '';
 
+            let returnLink = '';
+            returnLink = `<a href="/todos.html?id=${obtId.id}"><i class="fas fa-long-arrow-alt-left"></i> Regresar</a>`;
+            document.getElementById('return').innerHTML = returnLink;
+
+
+            if(helper.website != ''){
+                let goToWeb = '';
+                goToWeb = `<a href="${helper.website}" target="_blank">Ir a la página <i class="fas fa-long-arrow-alt-right"></i></a>`;
+                document.getElementById('goWeb').innerHTML = goToWeb;
+            }
+        
+
             helper.images.forEach(element => {
                 imgProject += `
                     <div class="owl-slide cover" style="background-image: url('img/Proyectos/${element}');"></div>
@@ -61,7 +75,7 @@ $(document).ready(function(){
             $('#location-project').text(`${helper.country} - Colombia`);
             $('#title-project').text(`${helper.name}`);
             $('#address-project').text(`${helper.address}`);
-            $('#description-project').text(`${helper.description}`);
+            $('#description-project').append(`${helper.description}`);
 
             if(helper.stage != ''){
                 let stageProject = '';
@@ -95,11 +109,17 @@ $(document).ready(function(){
                 });
             }
 
-            if(helper.area.length != 0){
+            if(helper.areaOne.length != 0){
                 let areaProject = `
-                    <p><span>Área:</span> ${helper.area}</p>
+                    <p><span>Área construida apartamentos:</span> ${helper.areaOne}</p>
                 `;
-                document.getElementById('area-project').innerHTML = areaProject;
+                document.getElementById('area-project-one').innerHTML = areaProject;
+            }
+            if(helper.areaTwo.length != 0){
+                let areaProject = `
+                    <p><span>Área construida residencias:</span> ${helper.areaTwo}</p>
+                `;
+                document.getElementById('area-project-two').innerHTML = areaProject;
             }
 
             let stageBoxProject='';
@@ -132,7 +152,7 @@ $(document).ready(function(){
                 if(helper.website != 0) {
                     contactProject += `
                         <div class="col-md-6 col-lg-4 link">
-                            <a href="">Ir a la pagina <img src="img/SVG/view-arrow.svg" alt=""></a>
+                            <a href="">Ir a la página <img src="img/SVG/view-arrow.svg" alt=""></a>
                         </div>
                     `;
                 }

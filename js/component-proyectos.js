@@ -11,6 +11,7 @@ $(document).ready(function(){
 
             data.forEach(element => {
                 tipeProyect += `
+                <a href="todos.html?id=${element.id}?">
                     <div class="col-md-6 col-xl-4 item">
                         <div class="img-box">
                             <div id="${element.idName}" class="img" style="${element.imgSection}"></div>
@@ -26,10 +27,11 @@ $(document).ready(function(){
                                     <li>Ciudades: ${element.citys.join(', ')}</li>
                                     <li>${element.squareMeter}</li>
                                 </ul>
-                                <a href="todos.html?id=${element.id}?">Ver proyectos <i class="fas fa-caret-right"></i></a>
+                                <a class="link" href="todos.html?id=${element.id}?">Ver proyectos <i class="fas fa-caret-right"></i></a>
                             </div>
                         </div>
                     </div>
+                </a>
                 `;
     
                 document.getElementById('tipeProyect').innerHTML = tipeProyect;

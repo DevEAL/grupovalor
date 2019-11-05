@@ -21,6 +21,8 @@ $(document).ready(function(){
         autoplayTimeout:5000,
         autoplayHoverPause:true,
         stagePadding:0,
+        dots:false,
+        nav:true,
         responsive:{
             300:{
                 items:1,
@@ -35,6 +37,8 @@ $(document).ready(function(){
         autoplayTimeout:5000,
         autoplayHoverPause:true,
         stagePadding:0,
+        dots:false,
+        nav:true,
         responsive:{
             300:{
                 items:1,
@@ -70,9 +74,9 @@ $(document).ready(function(){
         content = content.top -700;
 
         if(windowHeight >= content ){
-            odoMeters.update(553826);
-            odoJobs.update(590);
-            odoEnding.update(28);
+            odoMeters.update(1000000);
+            odoJobs.update(100);
+            odoEnding.update(60);
         }
     });
 

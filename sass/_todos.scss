@@ -1,3 +1,12 @@
+.back{
+    text-align: right;
+    a{
+        color: $red-valor;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
 .proyects-cont{
     .item{
         .prTitlePd{
@@ -10,7 +19,7 @@
                     margin-bottom: 1rem;
                     li{ margin-bottom: .5rem; }
                 }
-                a{
+                .link{
                     margin: 0 auto;
                     color: #fff;
                     text-align: center;

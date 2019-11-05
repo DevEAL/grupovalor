@@ -1,3 +1,4 @@
+
 .proyectos{
     padding-top: 180px;
     padding-bottom: 60px;
@@ -13,6 +14,12 @@
 }
 
 .proyects-cont{
+    a{
+        color: #fff;
+        &:hover{
+            text-decoration: none;
+        }
+    }
     .item{
         position: relative;
         overflow: hidden;
@@ -80,7 +87,7 @@
                         margin-bottom: 1.2rem;
                     }
                 }
-                a{
+                .link{
                     margin: 0 auto;
                     color: #fff;
                     text-align: center;
