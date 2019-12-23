@@ -1,8 +1,17 @@
 @media (max-width: 1024px){
-    .equipo{
-        .item{
-            padding: 0 2rem;
+    .indices{
+        .content{
+            img{ max-height: 70px; }
+            p{ margin: 1rem 0; }
+            .number{ font-size: 35px; }
         }
+        .vertLine{
+            &::before,&::after{ background: none; }
+        }
+    }
+
+    .equipo{
+        .item{ padding: 0 2rem; }
         .team-text{
             h2{
                 font-size: 22px;
@@ -12,9 +21,7 @@
                 background: #FFFFFF;
                 margin:1rem 0;
             }
-            h3{
-                font-size: 18px;
-            }
+            h3{ font-size: 18px; }
             .firma{
                 max-width: 130px;
                 max-height: 80px;
@@ -24,86 +31,70 @@
         }
     }
 
-    .historia{
-        .owl-historia{
-            .owl-nav{
-                bottom: 20px;
-                button{
-                    position: absolute;
-                    &:focus{
-                        outline:0;
-                    }
-                    &.owl-prev{
-                        left: 45%;
-                    }
-                    &.owl-next{
-                        right: 45%;
-                    }
-                }
+    .text-filter{
+        .container{
+            .row{
+                .project-name{ padding-left: 5rem; }
             }
         }
     }
 
-    .text-filter{
-        .container{
-            .row{
-                .project-name{
-                    // justify-content: flex-start;
-                    padding-left: 5rem;
-                }
-            }
-        }
+    .novedades{
+        .img-novedades{ padding:  0rem; }
+        .content-novedades{ padding:  2rem; }
     }
 }
 
 @media (max-width: 992px){
     footer{
         .body-footer{
-           .col-footer{
-               margin-bottom: 2.5rem;
-           }
+           .col-footer{ margin-bottom: 2.5rem; }
         }
     }
 }
 
 
 @media (max-width: 768px){
-    .politica{
-        .content{
-            .numeration{
-                .number{
-                    border-right: 0px solid $red-valor;
+    .nav-red{ background: $red-valor; }
+
+    .logos{
+        .logo-valor{ 
+            width: 280px;
+            margin-bottom: 2rem;
+        }
+        .sombrillas{
+            img{ max-height: 90px;}
+        }
+        .title{
+            h2{ font-size: 1.3rem; }
+        }
+        
+        .owl-logos-one, .owl-logos-two{
+            .item{
+                .cont-img{
+                    img{ width: 140px; }
                 }
             }
+            .owl-nav{ bottom: 140px; }
+        }
+    }
+
+    .indices{
+        .content{
+            padding-bottom: 3rem;
+            img{ max-height: 60px; }
+            p{ font-size: 16px; }
+            .number{ font-size: 30px; }
         }
     }
 
     .equipo{
-        .item{
-            margin-bottom: 2rem;
-        }
-        .item-order{
-            order: 2
-        }
+        .item{ margin-bottom: 2rem; }
+        .item-order{ order: 2; }
     }
 
     .historia{
-        .owl-historia{
-            .owl-dots{
-                button{
-                    margin: 0px;
-                }
-            }
-        }
-    }
-
-    footer{
-        .nav-footer{
-            .nav-footer-items{
-                flex-direction: column;
-                align-items: center;
-            }
-        }
+        .owl-nav{ bottom: 60%; }
     }
 
     .proyects-cont{
@@ -127,9 +118,7 @@
                     justify-content: flex-start;
                     padding-top: 15rem;
                     padding-left: 5rem;
-                    h1{
-                        font-size: 50px;
-                    }
+                    h1{font-size: 50px; }
                 }
             }
         }
@@ -140,9 +129,7 @@
         padding-bottom: 3rem;
         .info{
             margin-bottom: 4rem;
-            p{
-                color:$gray1-valor;
-            }
+            p{ color:$gray1-valor; }
             span{
                 color: $red-valor;
                 text-transform: capitalize;
@@ -156,10 +143,36 @@
             .container-img{
                 padding-bottom: 2rem;
                 a{
-                    img{
-                        margin-bottom: 1rem;
-                    }
+                    img{ margin-bottom: 1rem; }
                 }
+            }
+        }
+    }
+
+    .novedades{
+        .white-content{ 
+            .img-novedades{ order: 1; }
+            .content-novedades{ order: 2; }    
+        }
+    }
+
+    .contacto{
+        .contact-info{ order: 2; }
+        .contact-form{
+            order: 1;
+            margin-bottom: 4rem;
+        }
+        .contact-form {
+            form{ width: 100%;}
+        }
+    }
+
+    footer{
+        .body-footer{ justify-content: center; }
+        .nav-footer{
+            .nav-footer-items{
+                flex-direction: column;
+                align-items: center;
             }
         }
     }
@@ -170,107 +183,67 @@
         font-size: 30px;
         letter-spacing: 2px;
     }
-    h3{
-        font-size: 20px;
+    h3{ font-size: 20px; }
+
+    .row{ margin: 0; }
+
+    header{
+        .nav{ padding: 0 20px;}
     }
 
-    .row{
-        margin: 0;
-    }
-
-    .politica{
+    .quienes-somos{
         padding-top: 140px;
         padding-bottom: 20px;
+        height: auto;
         .title{
             margin-bottom: 10px;
-            h1{
-                color: $red-valor;
-            }
+            h1{ color: $red-valor; }
         }
+        .texto-quienes{ margin-bottom: 1rem; }
         .content{
             margin: 20px 0px;
-            .hr-content{
-                margin-top:50px;
-            }
-            .numeration{
-                margin: 20px 0px;
-            }
+            .hr-content{ margin-top:50px; }
+            .numeration{ margin: 20px 0px; }
         }
     }
-
-    .equipo{
-        .item{
-            padding:0 1rem;
+    
+    .logos{
+        .logo-valor{ 
+            width: 270px;
+            margin-bottom: 2rem;
         }
+        .sombrillas{
+            img{ max-height: 90px;}
+        }
+        .title{
+            h2{ font-size: 1.3rem; }
+        }
+        
+        .owl-logos-one, .owl-logos-two{
+            .item{
+                .cont-img{
+                    img{ width: 150px; }
+                }
+            }
+            .owl-nav{ bottom: 300px; }
+        }
+    }
+    
+    .equipo{
+        .item{ padding:0 1rem; }
     }
 
     .historia{
-        .owl-historia{
-            .item{
-                text-align: center;
-                font-size: 14px;
-                .bubble1,.bubble2{
-                    display: none;
-                }
-                p{
-                    font-size: 14px;
-                }
-            }
-            .owl-nav{
-                position: relative;
-                bottom: -30px;
-                button{
-                    position: absolute;
-
-                    &.owl-prev{
-                        left: 15%;
-                    }
-                    &.owl-next{
-                        right: 15%;
-                    }
-                }
-            }
-            .owl-dots{
-                text-align: center;
-                font-weight: 500;
-                padding: 0 20px;
-                margin-top: 2rem;
-                button{
-                    width: 200px;
-                    height: 30px;
-                    color: $gray1-valor;
-                    transition: all .5s;
-                }
-            }
-        }
-    }
-
-    .equipoHumano{
-        .owl-equipoHumano{
-            .owl-nav{
-                bottom: 35px;
-                button{
-                    position: absolute;
-                    &.owl-prev{
-                        left: 2%;
-                        
-                    }
-                    &.owl-next{
-                        right: 2%;
-                    }
-                }
-            }
-            .owl-dots{
-                text-align: center;
-                font-weight: 500;
-                padding: 0 20px;
-                margin-top: 1rem;
+        .owl-nav{
+            bottom: 65%;
+            padding: 0 10px;
+            .owl-prev, .owl-next{  
+                span{ font-size: 50px; }
             }
         }
     }
 
     .proyects-cont{ padding: 0rem .25rem; }
-
 
     .text-filter{
         .container{
@@ -292,12 +265,46 @@
                 padding: 0;
                 a{
                     padding: .5rem;
-                    img{
-                        margin:0;
-                    }
+                    img{ margin:0; }
                 }
             }
         }
     }
-}
 
+    .novedades{
+        padding: 0;
+        .content-novedades{ padding: 1rem; }
+    }
+
+    .servicios{
+        .tab-col{
+            padding: 0;
+            .btn-tab{
+                .icon-tab{ width: 8px; }
+            }
+            .content-tab{
+                padding: 1rem;
+                h6{
+                    text-transform: uppercase;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        padding-top: 2rem;
+        .body-footer {
+            .col-footer {
+                margin-bottom: 1rem;
+                .content-footer {
+                    .sub-footer { margin-bottom: 1rem; }
+                }
+            } 
+        } 
+        .nav-footer{ padding: 0; }
+        .powered{ 
+            p{ font-size: 14px; }
+        }
+    }
+}

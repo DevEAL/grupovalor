@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/font-awesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="icon" type="image/png" href="favicon.png">
     <title>Grupo Valor - Servicios</title>
 </head>
 <body>
@@ -41,7 +42,6 @@
     <div class="container contacto-title">
         <div class="row">
             <div class="col-md-6 title">
-                <!-- <h2><span>Grupo</span> inmobiliario y constructor <span>Valor S.A.</span></h2> -->
                 <img src="img/SVG/valor_logo.svg" alt="">
             </div>
         </div>
@@ -49,9 +49,9 @@
 
     <div class="container contacto">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6 contact-info">
                 <div class="contact-date">
-                    <p>Telefono: (57 1) 610 7001</p>
+                    <p>Teléfono: (57 1) 610 7001</p>
                     <p>Carrera 16 N° 97 - 37</p>
                     <p>Bogotá D.C. Colombia</p>
                     <br>
@@ -63,30 +63,29 @@
                         <img src="img/SVG/icono-screen.svg" alt="">
                     </div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.498143292722!2d-74.05179578482466!3d4.683138143112574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a944ee55bf9%3A0x9e3957ed9d042b3d!2sValor%20S.A.!5e0!3m2!1ses!2sco!4v1568846765670!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps/ms?msa=0&amp;msid=214533508742915361277.0004e1baec680627304c7&amp;ie=UTF8&amp;t=m&amp;ll=4.688795,-74.054632&amp;spn=0.009581,0.012231&amp;z=15&amp;output=embed"></iframe> -->
                 </div>
             </div>
 
-            <div class="col-md-6 contact-form">
-                <form>
+            <div class="col-lg-6 contact-form">
+                <form id="formularioContacto" action="">
                     <div class="form-group">
-                        <input type="text" id="nombre" aria-describedby="emailHelp" placeholder="Nombre:">
+                        <input name="name" type="text" id="nombre" aria-describedby="emailHelp" placeholder="Nombre:">
                     </div>
                     <div class="form-group">
-                        <input type="email" id="correo" placeholder="Correo:">
+                        <input name="email" type="email" id="correo" placeholder="Correo:">
                     </div>
                     <div class="form-group">
-                        <input type="text" id="telefono" placeholder="Telefono: (ej: 321 456 7890)">
+                        <input name="phone" type="text" id="telefono" placeholder="Telefono: (ej: 321 456 7890)">
                     </div>
                     <div class="form-group">
-                        <input type="text" id="asunto" placeholder="Asunto: (ej: Cotización)">
+                        <input name="subject" type="text" id="asunto" placeholder="Asunto: (ej: Cotización)">
                     </div>
                     <div class="form-group">
-                        <textarea id="mensaje" rows="8"  placeholder="Mensaje:"></textarea>
+                        <textarea name="message" id="mensaje" rows="8"  placeholder="Mensaje:"></textarea>
                     </div>
                     
                     <div class="btns">
-                        <button type="submit" class="btn btn-valor">Borrar</button>
+                        <button type="button" class="btn btn-valor">Borrar</button>
                         <button type="submit" class="btn btn-valor">Enviar</button>
                     </div>
                 </form>
@@ -158,5 +157,6 @@
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
     <script src="js/app.js"></script>
+    <script src="js/contacto.js"></script>
 </body>
 </html>

@@ -37,9 +37,6 @@ $(document).ready(function(){
         }
     }
 
-
-
-   
     cargarJSON = () => {
     // fetch('https://motoraidadventure.com/proyects.json')
     fetch('./proyects.json')
@@ -51,11 +48,10 @@ $(document).ready(function(){
             let obtId = getGET();
             let helper = data[obtId.id].proyects[obtId.prId];
             let imgProject = '';
-
             let returnLink = '';
-            returnLink = `<a href="/todos.html?id=${obtId.id}"><i class="fas fa-long-arrow-alt-left"></i> Regresar</a>`;
-            document.getElementById('return').innerHTML = returnLink;
 
+            returnLink = `<a href="todos.html?id=${obtId.id}"><i class="fas fa-long-arrow-alt-left"></i> Regresar</a>`;
+            document.getElementById('return').innerHTML = returnLink;
 
             if(helper.website != ''){
                 let goToWeb = '';
@@ -63,7 +59,6 @@ $(document).ready(function(){
                 document.getElementById('goWeb').innerHTML = goToWeb;
             }
         
-
             helper.images.forEach(element => {
                 imgProject += `
                     <div class="owl-slide cover" style="background-image: url('img/Proyectos/${element}');"></div>
@@ -81,7 +76,7 @@ $(document).ready(function(){
                 let stageProject = '';
                 helper.stage.forEach((element,index) => {
                     stageProject += `
-                        <p><span>Etapa ${index+1}:</span> ${element}</p>
+                        <p><span>Etapa ${index + 1}:</span> ${element}</p>
                     `;
                     document.getElementById('stage-project').innerHTML = stageProject;
                 });
@@ -125,7 +120,7 @@ $(document).ready(function(){
             let stageBoxProject='';
             helper.imgBox.forEach((element,index) => {
                 stageBoxProject += `
-                    <a href="img/Proyectos/${helper.images[index]}" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-md-3">
+                    <a href="img/Proyectos/${helper.images[index]}" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-md-3 wow fadeInUp" data-wow-delay=".${index + 2}s">
                         <img src="img/Proyectos/${element}" class="img-fluid">
                     </a>
                 `;
@@ -137,13 +132,13 @@ $(document).ready(function(){
                 contactProject='';
                 contactProject += `
                     <div class="col-md-12 title">
-                        <h2>Contacto</h2>
+                        <h2 class="wow fadeInUp" data-wow-duration="2s">Contacto</h2>
                     </div>
-                    <div class="col-md-6 col-lg-4 date">
+                    <div class="col-md-6 col-lg-4 date wow fadeInUp" data-wow-duration="2s">
                         <p>Sitio web: <br> ${helper.website}</p>
                         <p>Correo electronico: <br> ${helper.mail}</p>
                     </div>
-                    <div class="col-md-6 col-lg-4 date">
+                    <div class="col-md-6 col-lg-4 date wow fadeInUp" data-wow-duration="2s">
                         <p>Telefonos: <br> ${helper.phone.join(' - ')}</p>
                         <p>Celular: <br> ${helper.cellPhone.join(' - ')}</p>
                     </div>
@@ -151,8 +146,8 @@ $(document).ready(function(){
     
                 if(helper.website != 0) {
                     contactProject += `
-                        <div class="col-md-6 col-lg-4 link">
-                            <a href="">Ir a la página <img src="img/SVG/view-arrow.svg" alt=""></a>
+                        <div class="col-md-6 col-lg-4 link wow fadeInUp" data-wow-duration="2s">
+                            <a href="${helper.website}" target="_blank">Ir a la página <img src="img/SVG/view-arrow.svg" alt=""></a>
                         </div>
                     `;
                 }

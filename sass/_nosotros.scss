@@ -1,19 +1,17 @@
-.nav-red{
-    background: $red-valor;
-}
+.nav-red{ background: $red-valor; }
 
-.quienes-somos, .politica{
-    padding-top: 60px;
+.quienes-somos{
     padding-bottom: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .title{
         margin-bottom: 20px;
-        h1{
-            color: $red-valor;
-        }
-        .hr-title{
-            background: $red-valor;
-        }
+        h1 { color: $red-valor; }
+        .hr-title { background: $red-valor; }
     }
+    .texto-quienes{ margin-bottom: 3rem; }
     .content{
         margin: 30px 0px;
         h3{
@@ -29,7 +27,7 @@
 }
 
 .quienes-somos{
-    padding-top: 180px;
+    padding-top: 60px;
     .content{
         margin-top: 30px;
         margin-bottom: 0;
@@ -44,6 +42,13 @@
         width: 450px;
         margin-bottom: 4rem;
     }
+    .sombrillas{
+        margin-bottom: 3rem;
+        img{
+            max-height: 110px;
+            margin-bottom: 2rem;
+        }
+    }
     .title{
         opacity: .4;
         margin-top: 2rem;
@@ -53,7 +58,6 @@
             letter-spacing: 1px;
         }
     }
-    
     .owl-logos-one, .owl-logos-two{
         margin-bottom: 1rem;
         .item{
@@ -62,8 +66,7 @@
                     margin: 0 auto;
                     opacity: .4;
                     width: 200px;
-                    height: auto;
-                    
+                    height: auto; 
                 }
             }
         }
@@ -93,224 +96,8 @@
                 margin: 0 8px;
                 opacity: .5;
                 transition: all .5s;
-                &.active,&:hover{
-                    opacity: 1;
-                }
-                &:focus{
-                    outline:0;
-                }
-            }
-        }
-    }
-}
-
-.equipo{
-    background: $red-valor;
-    .title{
-        color: #FFFFFF;
-        padding: 5rem 0;
-        hr{
-            background: #FFFFFF;
-        }
-    }
-    .team-photo{
-        text-align: center;
-    }
-    .item{
-        padding: 0 5rem;
-    }
-    .team-text{
-        color: #FFFFFF;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h2{
-            font-size: 26px;
-            margin-bottom: 1.5rem;
-        }
-        .hr-content{
-            background: #FFFFFF;
-            margin:2rem 0;
-        }
-        .firma{
-            margin-top: 2rem;
-            margin-right: 2rem;
-            max-width: 200px;
-            max-height: 150px;
-            align-self: flex-end;
-        }
-    }
-}
-
-.historia{
-    box-sizing: border-box;
-    position: relative;
-    background: $gray3-valor;
-    padding: 5rem 0;
-    height: 1000px;
-    .title{
-        margin-bottom: 3rem;
-        height: 100%;
-        h1{
-            color: $red-valor;
-        }
-        img{
-            width: 60px;
-            float: left;
-            margin-right: 20px;
-        }
-        h3{
-            color: $gray1-valor;
-        }
-    }
-    .outer-wrapper{
-        width: 100vh;
-        // height: 100vw;
-        // height: 400px;
-        transform: rotate(-90deg) translateX(-100vh);
-        transform-origin: top left;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        position: relative;
-        .wraper{
-            display: flex;
-            flex-direction: row;
-            width: 300vw;
-            height: 100vw;
-            transform: rotate(90deg) translateY(-100vh);
-            transform-origin: top left;
-            .slide{
-                height: 700px;
-                width: 100vw;
-                &.one{ background-image: (url('../img/Timeline/slide_1.jpg')); }
-                &.two{ background-image: (url('../img/Timeline/slide_2.jpg'));  }
-                &.three{ background-image: (url('../img/Timeline/slide_3.jpg')); }
-                &.one, &.two, &.three{
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                }
-            }
-        }
-    }
-
-    .owl-historia{
-        .item{
-            text-align: center;
-            font-size: 14px;
-            .bubble,.bubble1,.bubble2,.bubble3{
-                width: 18px;
-                height: 18px;
-                margin: 0 auto;
-                background: $red-valor;
-                border-radius: 50%;
-                margin-bottom: 2rem;
-                position: relative;
-                &:before, &::after{
-                    content: '';
-                    height: 1px;
-                    background: $gray2-valor;
-                    position: absolute;
-                    top: 50%;
-                }
-                &:before{
-                    left: 200%;
-                }
-                &::after{
-                    right:200%;
-                }
-            }
-            .bubble{
-                &:before, &::after{
-                    width: 3000%;
-                }
-            }
-            .bubble1{
-                &:before, &::after{
-                    width: 1500%;
-                }
-            }
-            .bubble2{
-                &:before, &::after{
-                    width: 700%;
-                }
-            }
-            .bubble3{
-                &:before, &::after{
-                    width: 800%;
-                }
-            }
-            p{
-                span{
-                    font-weight: 500;
-                    text-transform: uppercase;
-                }
-            }
-            .mutis{
-                margin-bottom: 1rem;
-                h4,h5{
-                    font-size: 24px;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    color: $red-valor;
-                }
-                h5{
-                    font-size: 20px;
-                }
-                p{margin: 0;}
-            }
-        }
-        .owl-nav{
-            font-size: 80px;
-            color:  $red-valor;
-            position: relative;
-            bottom: 100px;
-            button{
-                position: absolute;
-                &:focus{
-                    outline:0;
-                }
-                &.owl-prev{
-                    left: -6%;
-                }
-                &.owl-next{
-                    right: -6%;
-                }
-            }
-        }
-        .owl-dots{
-            margin-top: 3rem;
-            text-align: center;
-            font-weight: 500;
-            button{
-                width: 150px;
-                height: 30px;
-                margin: 0 5px;
-                color: $gray1-valor;
-                transition: all .5s;
-                &.active{
-                    color: $red-valor;
-                }
-                &:focus{
-                    outline:0;
-                }
-            }
-            button:nth-child(1):before{
-                content: '1984 - 1990';
-            }
-            button:nth-child(2):before{
-                content: '1990 - 2000';
-            }
-            button:nth-child(3):before{
-                content: '2000 - 2010';
-            }
-            button:nth-child(4):before{
-                content: '2010 - 2015';
-            }
-            button:nth-child(5):before{
-                content: '2015 - 2018';
-            }
-            button:nth-child(6):before{
-                content: '2018 - Actualidad';
+                &.active,&:hover{ opacity: 1; }
+                &:focus{ outline:0; }
             }
         }
     }
@@ -340,9 +127,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        img{
-            max-height: 100px;
-        }
+        img{ max-height: 100px; }
         p{
             font-size: 18px;
             margin: 2rem 0;
@@ -368,91 +153,60 @@
             background: $gray2-valor;
             top: 16%;
         }
-        &::before{
-            right: 0;
+        &::before{ right: 0;
         }
-        &::after{
-            left: 0;
+        &::after{ left: 0; }
+    }
+}
+
+.equipo{
+    background: $red-valor;
+    padding-bottom: 5rem;
+    .title{
+        color: #FFFFFF;
+        padding: 5rem 0;
+        hr{ background: #FFFFFF; }
+    }
+    .team-photo{ text-align: center; }
+    .item{ padding: 0 5rem; }
+    .team-text{
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            font-size: 26px;
+            margin-bottom: 1.5rem;
+        }
+        .hr-content{
+            background: #FFFFFF;
+            margin:2rem 0;
+        }
+        .firma{
+            margin-top: 2rem;
+            margin-right: 2rem;
+            max-width: 200px;
+            max-height: 150px;
+            align-self: flex-end;
         }
     }
 }
 
-/*.valoresCorp{
-    z-index: 2;
-    background: $red-valor;
-    color: #FFFFFF;
-    padding: 5rem 0;
-    hr{
-        background: #FFFFFF;
-    }
-    .hr-content{
-        margin: 2rem 0;
-    }
-    .content{
-        margin-top: 4rem;
-        h4{
-            font-size: 22px;
-            text-transform: uppercase;
-        }
-    }
-}*/
-
-.equipoHumano{
-    padding: 5rem 0;
-    .title{
-        margin-bottom: 3rem;
-        color: $red-valor;
-    }
-    .owl-equipoHumano{
-        .item{
-            img{
-                -webkit-filter: grayscale(100%);
-                filter: grayscale(100%);
-            }
-            p{
-                text-align: center;
-                font-size: 14px;
-                font-weight: 100;
-                color: #FFFFFF;
-                padding: .5rem;
-                background: $red-valor;
-            }
-        }
-        .owl-nav{
-            font-size: 80px;
-            color:  $red-valor;
-            position: relative;
-            bottom: 250px;
-            button{
-                position: absolute;
-                &:focus{
-                    outline:0;
-                }
-                &.owl-prev{
-                    left: -6%;
-                }
-                &.owl-next{
-                    right: -6%;
-                }
-            }
-        }
-        .owl-dots{
-            margin-top: 1rem;
-            text-align: center;
-            font-weight: 500;
-            button{
-                width: 12px;
-                height: 12px;
-                border-radius: 50%;
-                margin: 0 .3rem;
-                background: $gray1-valor;
-                transition: all .5s;
-                &.active{
-                    background: $red-valor;
-                }
-                &:focus{
-                    outline:0;
-                }
+.historia{
+    position: relative;
+    .owl-nav{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        bottom: 55%;
+        padding: 0 20px;
+        .owl-prev, .owl-next{  
+            &:focus{ outline: none; }
+            span{
+                font-size: 80px; 
+                color: $red-valor;
             }
         }
     }

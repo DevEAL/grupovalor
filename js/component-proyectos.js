@@ -9,10 +9,10 @@ $(document).ready(function(){
         .then((data) =>{ 
             let tipeProyect = '';
 
-            data.forEach(element => {
+            data.forEach((element,index) => {
                 tipeProyect += `
                 <a href="todos.html?id=${element.id}?">
-                    <div class="col-md-6 col-xl-4 item">
+                    <div class="col-md-6 col-xl-4 item wow fadeIn" data-wow-duration="${index + 1}s">
                         <div class="img-box">
                             <div id="${element.idName}" class="img" style="${element.imgSection}"></div>
                         </div> 
@@ -43,17 +43,14 @@ $(document).ready(function(){
     }
     cargarJSON();
 
-    let imgComer = ["Irotama/small_1.jpg","33_dc/small_1.jpg", "Morari_105/small_1.jpg","Turpial/small_1.jpg"];
-    let imgEject = ["Baia_138/small_1.jpg","Penalisa_mall/small_1.jpg","Portal_41/small_1.jpg"];
-    let imgReali = ["P_javeriana/small_1.jpg","Jazz/small_1.jpg","Santorini/small_1.jpg"];
+    let imgComer = ["Valenti/small_1.jpg","33_dc/small_6.jpg", "Moratto_44/small_3.jpg","Turpial/small_1.jpg"];
+    let imgReali = ["Studio_106/small_1.jpg","Morari_105/small_1.jpg","Baia_138/small_1.jpg"];
     let contador = 0;
 
     /* Funcion para cambiar la imagen */
     function rotarImagenes() {
         contador++;
         $('#comercializacion').attr('style',`background-image: url(' img/Proyectos/Comercializacion/${imgComer[contador%imgComer.length]} ');`);
-
-        $('#ejecucion').attr('style',`background-image: url(' img/Proyectos/Ejecucion/${imgEject[contador%imgEject.length]} ');`);
         
         $('#realizados').attr('style',`background-image: url(' img/Proyectos/Realizados/${imgReali[contador%imgReali.length]} ');`);
     }

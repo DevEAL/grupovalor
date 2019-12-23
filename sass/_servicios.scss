@@ -1,18 +1,12 @@
-.nav-red{
-    background: $red-valor;
-}
+.nav-red{ background: $red-valor; }
 
 .servicios-title{
     padding-top: 180px;
     padding-bottom: 3rem;
     .title{
         margin-bottom: 20px;
-        h1{
-            color: $red-valor;
-        }
-        .hr-title{
-            background: $red-valor;
-        }
+        h1{ color: $red-valor; }
+        .hr-title{ background: $red-valor; }
     }
 }
 
@@ -46,7 +40,6 @@
                 transform: rotate(90deg);
             }
         }
-
         .content-tab{
             padding:2rem 4.5rem;
             h6{

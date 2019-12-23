@@ -4,21 +4,15 @@
     padding-bottom: 60px;
     .title{
         margin-bottom: 20px;
-        h1{
-            color: $red-valor;
-        }
-        .hr-title{
-            background: $red-valor;
-        }
+        h1{ color: $red-valor; }
+        .hr-title{ background: $red-valor; }
     }
 }
 
 .proyects-cont{
     a{
         color: #fff;
-        &:hover{
-            text-decoration: none;
-        }
+        &:hover{ text-decoration: none; }
     }
     .item{
         position: relative;
@@ -57,9 +51,7 @@
                 color: #fff;
                 text-transform: uppercase;
             }
-            .hr-content{
-                background: #fff;
-            }
+            .hr-content{ background: #fff; }
         }
         .content{
             color: #fff;
@@ -83,9 +75,7 @@
                     padding: 0;
                     margin: 0;
                     margin-bottom: 1.5rem;
-                    li{
-                        margin-bottom: 1.2rem;
-                    }
+                    li{ margin-bottom: 1.2rem; }
                 }
                 .link{
                     margin: 0 auto;
@@ -106,17 +96,13 @@
                     }
                     &:hover{ 
                         text-decoration: none; 
-                        &::before{
-                            width: 100%;
-                        }
+                        &::before{ width: 100%; }
                     }
                 }
             }
         }
         &:hover{
-            .content{
-                bottom: 0%;
-            }
+            .content{ bottom: 0%; }
         }
     }
 }

@@ -15,7 +15,6 @@ body{
     font-weight: 300;
 }
 
-
 h1{
     font-family: $title-font;
     font-size: 34px;
@@ -28,9 +27,7 @@ h2{
     letter-spacing: 2.5px;
 }
 
-h3{
-    font-size: 22px;
-}
+h3{ font-size: 22px; }
 
 h3,h4,h5,h6{
     font-family: $text-font;
@@ -59,9 +56,7 @@ p{
     align-items: center;
     opacity: 1;
     transition: all 1.5s;
-    img{
-        width: 150px;
-    }
+    img{ width: 150px; }
 }
 
 .home{
@@ -83,9 +78,7 @@ header{
         align-items: center;
         z-index: 3;
         .valor-logo{
-            img{
-                width: 250px;
-            }
+            img{ width: 250px; }
         }
         .nav-toggle{
             min-width: 35px;
@@ -93,9 +86,7 @@ header{
             cursor: pointer;
             display: flex;
             align-items: center;
-            span{
-                position: relative;
-            }
+            span{ position: relative; }
             span,span:before,span:after{
                 width: 35px;
                 height: 2px;
@@ -161,16 +152,12 @@ header{
                 transition: .5s;
                 padding: 4px 0px;
             }
-            &:hover{
-                transform: scale(1.5);
-            }
+            &:hover{ transform: scale(1.5); }
         }
     }
 }
 
-.sidebar.active{
-    top: 0;
-}
+.sidebar.active{ top: 0; }
 
 
 .hr-title{
@@ -257,20 +244,16 @@ footer{
             }
         }
     }
-    .powered{
-        text-align: right;
-    }
+    .powered{ text-align: right; }
 }
 
 .footer-black{
     background: $gray4-valor;
-    h4,footer .nav-footer-items a{
-        color: $gray2-valor;
-    }
+    h4,footer .nav-footer-items a{ color: $gray2-valor;}
     footer {
         .body-footer {
             .col-footer{
-                .content-footer p{color: $gray1-valor;}
+                .content-footer p{ color: $gray1-valor; }
             } 
         }
     }

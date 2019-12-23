@@ -1,10 +1,7 @@
 $(document).ready(function(){
     $('.owl-historia').owlCarousel({
-        loop:true,
-        margin:10,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true,
+        loop:false,
+        margin:0,
         stagePadding:0,
         nav:true,
         responsive:{
@@ -79,27 +76,5 @@ $(document).ready(function(){
             odoEnding.update(60);
         }
     });
-
-
-    // $('.owl-equipoHumano').owlCarousel({
-    //     loop:true,
-    //     margin:10,
-    //     autoplay:true,
-    //     autoplayTimeout:5000,
-    //     autoplayHoverPause:true,
-    //     stagePadding:0,
-    //     nav:true,
-    //     responsive:{
-    //         300:{
-    //             items:1,
-    //         },
-    //         600:{
-    //             items:2,
-    //         },
-    //         900:{
-    //             items:3,
-    //         }
-    //     }
-    // });
     
-})
+});

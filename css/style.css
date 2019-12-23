@@ -208,27 +208,32 @@ footer {
 .nav-red {
   background: #A00D0D; }
 
-.quienes-somos, .politica {
-  padding-top: 60px;
-  padding-bottom: 60px; }
-  .quienes-somos .title, .politica .title {
+.quienes-somos {
+  padding-bottom: 60px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .quienes-somos .title {
     margin-bottom: 20px; }
-    .quienes-somos .title h1, .politica .title h1 {
+    .quienes-somos .title h1 {
       color: #A00D0D; }
-    .quienes-somos .title .hr-title, .politica .title .hr-title {
+    .quienes-somos .title .hr-title {
       background: #A00D0D; }
-  .quienes-somos .content, .politica .content {
+  .quienes-somos .texto-quienes {
+    margin-bottom: 3rem; }
+  .quienes-somos .content {
     margin: 30px 0px; }
-    .quienes-somos .content h3, .politica .content h3 {
+    .quienes-somos .content h3 {
       text-transform: uppercase;
       color: #A00D0D;
       margin-bottom: 30px; }
-    .quienes-somos .content .hr-content, .politica .content .hr-content {
+    .quienes-somos .content .hr-content {
       background: #A00D0D;
       margin-top: 70px; }
 
 .quienes-somos {
-  padding-top: 180px; }
+  padding-top: 60px; }
   .quienes-somos .content {
     margin-top: 30px;
     margin-bottom: 0; }
@@ -241,6 +246,11 @@ footer {
   .logos .logo-valor {
     width: 450px;
     margin-bottom: 4rem; }
+  .logos .sombrillas {
+    margin-bottom: 3rem; }
+    .logos .sombrillas img {
+      max-height: 110px;
+      margin-bottom: 2rem; }
   .logos .title {
     opacity: .4;
     margin-top: 2rem; }
@@ -285,161 +295,6 @@ footer {
           opacity: 1; }
         .logos .owl-logos-one .owl-dots button:focus, .logos .owl-logos-two .owl-dots button:focus {
           outline: 0; }
-
-.equipo {
-  background: #A00D0D; }
-  .equipo .title {
-    color: #FFFFFF;
-    padding: 5rem 0; }
-    .equipo .title hr {
-      background: #FFFFFF; }
-  .equipo .team-photo {
-    text-align: center; }
-  .equipo .item {
-    padding: 0 5rem; }
-  .equipo .team-text {
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .equipo .team-text h2 {
-      font-size: 26px;
-      margin-bottom: 1.5rem; }
-    .equipo .team-text .hr-content {
-      background: #FFFFFF;
-      margin: 2rem 0; }
-    .equipo .team-text .firma {
-      margin-top: 2rem;
-      margin-right: 2rem;
-      max-width: 200px;
-      max-height: 150px;
-      align-self: flex-end; }
-
-.historia {
-  box-sizing: border-box;
-  position: relative;
-  background: #F5F5F5;
-  padding: 5rem 0;
-  height: 1000px; }
-  .historia .title {
-    margin-bottom: 3rem;
-    height: 100%; }
-    .historia .title h1 {
-      color: #A00D0D; }
-    .historia .title img {
-      width: 60px;
-      float: left;
-      margin-right: 20px; }
-    .historia .title h3 {
-      color: #636363; }
-  .historia .outer-wrapper {
-    width: 100vh;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: relative; }
-    .historia .outer-wrapper .wraper {
-      display: flex;
-      flex-direction: row;
-      width: 300vw;
-      height: 100vw;
-      transform: rotate(90deg) translateY(-100vh);
-      transform-origin: top left; }
-      .historia .outer-wrapper .wraper .slide {
-        height: 700px;
-        width: 100vw; }
-        .historia .outer-wrapper .wraper .slide.one {
-          background-image: url("../img/Timeline/slide_1.jpg"); }
-        .historia .outer-wrapper .wraper .slide.two {
-          background-image: url("../img/Timeline/slide_2.jpg"); }
-        .historia .outer-wrapper .wraper .slide.three {
-          background-image: url("../img/Timeline/slide_3.jpg"); }
-        .historia .outer-wrapper .wraper .slide.one, .historia .outer-wrapper .wraper .slide.two, .historia .outer-wrapper .wraper .slide.three {
-          background-size: contain;
-          background-repeat: no-repeat; }
-  .historia .owl-historia .item {
-    text-align: center;
-    font-size: 14px; }
-    .historia .owl-historia .item .bubble, .historia .owl-historia .item .bubble1, .historia .owl-historia .item .bubble2, .historia .owl-historia .item .bubble3 {
-      width: 18px;
-      height: 18px;
-      margin: 0 auto;
-      background: #A00D0D;
-      border-radius: 50%;
-      margin-bottom: 2rem;
-      position: relative; }
-      .historia .owl-historia .item .bubble:before, .historia .owl-historia .item .bubble::after, .historia .owl-historia .item .bubble1:before, .historia .owl-historia .item .bubble1::after, .historia .owl-historia .item .bubble2:before, .historia .owl-historia .item .bubble2::after, .historia .owl-historia .item .bubble3:before, .historia .owl-historia .item .bubble3::after {
-        content: '';
-        height: 1px;
-        background: #B3B3B3;
-        position: absolute;
-        top: 50%; }
-      .historia .owl-historia .item .bubble:before, .historia .owl-historia .item .bubble1:before, .historia .owl-historia .item .bubble2:before, .historia .owl-historia .item .bubble3:before {
-        left: 200%; }
-      .historia .owl-historia .item .bubble::after, .historia .owl-historia .item .bubble1::after, .historia .owl-historia .item .bubble2::after, .historia .owl-historia .item .bubble3::after {
-        right: 200%; }
-    .historia .owl-historia .item .bubble:before, .historia .owl-historia .item .bubble::after {
-      width: 3000%; }
-    .historia .owl-historia .item .bubble1:before, .historia .owl-historia .item .bubble1::after {
-      width: 1500%; }
-    .historia .owl-historia .item .bubble2:before, .historia .owl-historia .item .bubble2::after {
-      width: 700%; }
-    .historia .owl-historia .item .bubble3:before, .historia .owl-historia .item .bubble3::after {
-      width: 800%; }
-    .historia .owl-historia .item p span {
-      font-weight: 500;
-      text-transform: uppercase; }
-    .historia .owl-historia .item .mutis {
-      margin-bottom: 1rem; }
-      .historia .owl-historia .item .mutis h4, .historia .owl-historia .item .mutis h5 {
-        font-size: 24px;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #A00D0D; }
-      .historia .owl-historia .item .mutis h5 {
-        font-size: 20px; }
-      .historia .owl-historia .item .mutis p {
-        margin: 0; }
-  .historia .owl-historia .owl-nav {
-    font-size: 80px;
-    color: #A00D0D;
-    position: relative;
-    bottom: 100px; }
-    .historia .owl-historia .owl-nav button {
-      position: absolute; }
-      .historia .owl-historia .owl-nav button:focus {
-        outline: 0; }
-      .historia .owl-historia .owl-nav button.owl-prev {
-        left: -6%; }
-      .historia .owl-historia .owl-nav button.owl-next {
-        right: -6%; }
-  .historia .owl-historia .owl-dots {
-    margin-top: 3rem;
-    text-align: center;
-    font-weight: 500; }
-    .historia .owl-historia .owl-dots button {
-      width: 150px;
-      height: 30px;
-      margin: 0 5px;
-      color: #636363;
-      transition: all .5s; }
-      .historia .owl-historia .owl-dots button.active {
-        color: #A00D0D; }
-      .historia .owl-historia .owl-dots button:focus {
-        outline: 0; }
-    .historia .owl-historia .owl-dots button:nth-child(1):before {
-      content: '1984 - 1990'; }
-    .historia .owl-historia .owl-dots button:nth-child(2):before {
-      content: '1990 - 2000'; }
-    .historia .owl-historia .owl-dots button:nth-child(3):before {
-      content: '2000 - 2010'; }
-    .historia .owl-historia .owl-dots button:nth-child(4):before {
-      content: '2010 - 2015'; }
-    .historia .owl-historia .owl-dots button:nth-child(5):before {
-      content: '2015 - 2018'; }
-    .historia .owl-historia .owl-dots button:nth-child(6):before {
-      content: '2018 - Actualidad'; }
 
 .indices {
   background: #F5F5F5;
@@ -490,68 +345,51 @@ footer {
     .indices .vertLine::after {
       left: 0; }
 
-/*.valoresCorp{
-    z-index: 2;
-    background: $red-valor;
+.equipo {
+  background: #A00D0D;
+  padding-bottom: 5rem; }
+  .equipo .title {
     color: #FFFFFF;
-    padding: 5rem 0;
-    hr{
-        background: #FFFFFF;
-    }
-    .hr-content{
-        margin: 2rem 0;
-    }
-    .content{
-        margin-top: 4rem;
-        h4{
-            font-size: 22px;
-            text-transform: uppercase;
-        }
-    }
-}*/
-.equipoHumano {
-  padding: 5rem 0; }
-  .equipoHumano .title {
-    margin-bottom: 3rem;
-    color: #A00D0D; }
-  .equipoHumano .owl-equipoHumano .item img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
-  .equipoHumano .owl-equipoHumano .item p {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 100;
+    padding: 5rem 0; }
+    .equipo .title hr {
+      background: #FFFFFF; }
+  .equipo .team-photo {
+    text-align: center; }
+  .equipo .item {
+    padding: 0 5rem; }
+  .equipo .team-text {
     color: #FFFFFF;
-    padding: .5rem;
-    background: #A00D0D; }
-  .equipoHumano .owl-equipoHumano .owl-nav {
-    font-size: 80px;
-    color: #A00D0D;
-    position: relative;
-    bottom: 250px; }
-    .equipoHumano .owl-equipoHumano .owl-nav button {
-      position: absolute; }
-      .equipoHumano .owl-equipoHumano .owl-nav button:focus {
-        outline: 0; }
-      .equipoHumano .owl-equipoHumano .owl-nav button.owl-prev {
-        left: -6%; }
-      .equipoHumano .owl-equipoHumano .owl-nav button.owl-next {
-        right: -6%; }
-  .equipoHumano .owl-equipoHumano .owl-dots {
-    margin-top: 1rem;
-    text-align: center;
-    font-weight: 500; }
-    .equipoHumano .owl-equipoHumano .owl-dots button {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      margin: 0 .3rem;
-      background: #636363;
-      transition: all .5s; }
-      .equipoHumano .owl-equipoHumano .owl-dots button.active {
-        background: #A00D0D; }
-      .equipoHumano .owl-equipoHumano .owl-dots button:focus {
-        outline: 0; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .equipo .team-text h2 {
+      font-size: 26px;
+      margin-bottom: 1.5rem; }
+    .equipo .team-text .hr-content {
+      background: #FFFFFF;
+      margin: 2rem 0; }
+    .equipo .team-text .firma {
+      margin-top: 2rem;
+      margin-right: 2rem;
+      max-width: 200px;
+      max-height: 150px;
+      align-self: flex-end; }
+
+.historia {
+  position: relative; }
+  .historia .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 55%;
+    padding: 0 20px; }
+    .historia .owl-nav .owl-prev:focus, .historia .owl-nav .owl-next:focus {
+      outline: none; }
+    .historia .owl-nav .owl-prev span, .historia .owl-nav .owl-next span {
+      font-size: 80px;
+      color: #A00D0D; }
 
 .proyectos {
   padding-top: 180px;
@@ -688,6 +526,12 @@ footer {
         width: 100%; }
 .proyects-cont .item:hover .content {
   bottom: 0%; }
+
+.otros-proyectos {
+  padding-bottom: 60px; }
+  .otros-proyectos span {
+    color: #A00D0D;
+    font-weight: bold; }
 
 .return, .goWeb {
   position: absolute;
@@ -860,9 +704,9 @@ footer {
   padding-left: 6rem;
   padding-right: 6rem; }
 .novedades .img-novedades {
-  filter: grayscale(100%); }
-  .novedades .img-novedades img {
-    width: 100; }
+  filter: grayscale(100%);
+  display: flex;
+  align-items: flex-end; }
 .novedades .content-novedades {
   color: #636363;
   display: flex;
@@ -872,8 +716,27 @@ footer {
     text-transform: uppercase;
     margin-bottom: 2rem; }
   .novedades .content-novedades a {
-    text-align: center;
-    margin-top: 2rem; }
+    text-align: left;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 20px;
+    color: #A00D0D;
+    font-weight: bold;
+    position: relative;
+    width: 110px; }
+    .novedades .content-novedades a::before {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #A00D0D;
+      left: 0;
+      bottom: -2px;
+      transition: .5s; }
+    .novedades .content-novedades a:hover {
+      text-decoration: none; }
+      .novedades .content-novedades a:hover::before {
+        width: 100%; }
 
 .nav-red {
   background: #A00D0D; }
@@ -1035,6 +898,15 @@ footer {
         background: #A00D0D; }
 
 @media (max-width: 1024px) {
+  .indices .content img {
+    max-height: 70px; }
+  .indices .content p {
+    margin: 1rem 0; }
+  .indices .content .number {
+    font-size: 35px; }
+  .indices .vertLine::before, .indices .vertLine::after {
+    background: none; }
+
   .equipo .item {
     padding: 0 2rem; }
   .equipo .team-text h2 {
@@ -1051,37 +923,48 @@ footer {
     margin-top: 1rem;
     margin-right: 1rem; }
 
-  .historia .owl-historia .owl-nav {
-    bottom: 20px; }
-    .historia .owl-historia .owl-nav button {
-      position: absolute; }
-      .historia .owl-historia .owl-nav button:focus {
-        outline: 0; }
-      .historia .owl-historia .owl-nav button.owl-prev {
-        left: 45%; }
-      .historia .owl-historia .owl-nav button.owl-next {
-        right: 45%; }
-
   .text-filter .container .row .project-name {
-    padding-left: 5rem; } }
+    padding-left: 5rem; }
+
+  .novedades .img-novedades {
+    padding: 0rem; }
+  .novedades .content-novedades {
+    padding: 2rem; } }
 @media (max-width: 992px) {
   footer .body-footer .col-footer {
     margin-bottom: 2.5rem; } }
 @media (max-width: 768px) {
-  .politica .content .numeration .number {
-    border-right: 0px solid #A00D0D; }
+  .nav-red {
+    background: #A00D0D; }
+
+  .logos .logo-valor {
+    width: 280px;
+    margin-bottom: 2rem; }
+  .logos .sombrillas img {
+    max-height: 90px; }
+  .logos .title h2 {
+    font-size: 1.3rem; }
+  .logos .owl-logos-one .item .cont-img img, .logos .owl-logos-two .item .cont-img img {
+    width: 140px; }
+  .logos .owl-logos-one .owl-nav, .logos .owl-logos-two .owl-nav {
+    bottom: 140px; }
+
+  .indices .content {
+    padding-bottom: 3rem; }
+    .indices .content img {
+      max-height: 60px; }
+    .indices .content p {
+      font-size: 16px; }
+    .indices .content .number {
+      font-size: 30px; }
 
   .equipo .item {
     margin-bottom: 2rem; }
   .equipo .item-order {
     order: 2; }
 
-  .historia .owl-historia .owl-dots button {
-    margin: 0px; }
-
-  footer .nav-footer .nav-footer-items {
-    flex-direction: column;
-    align-items: center; }
+  .historia .owl-nav {
+    bottom: 60%; }
 
   .proyects-cont .item .p-title {
     padding: 2rem; }
@@ -1113,7 +996,26 @@ footer {
     .info-project .galery .container-img {
       padding-bottom: 2rem; }
       .info-project .galery .container-img a img {
-        margin-bottom: 1rem; } }
+        margin-bottom: 1rem; }
+
+  .novedades .white-content .img-novedades {
+    order: 1; }
+  .novedades .white-content .content-novedades {
+    order: 2; }
+
+  .contacto .contact-info {
+    order: 2; }
+  .contacto .contact-form {
+    order: 1;
+    margin-bottom: 4rem; }
+  .contacto .contact-form form {
+    width: 100%; }
+
+  footer .body-footer {
+    justify-content: center; }
+  footer .nav-footer .nav-footer-items {
+    flex-direction: column;
+    align-items: center; } }
 @media (max-width: 414px) {
   h1 {
     font-size: 30px;
@@ -1125,63 +1027,46 @@ footer {
   .row {
     margin: 0; }
 
-  .politica {
+  header .nav {
+    padding: 0 20px; }
+
+  .quienes-somos {
     padding-top: 140px;
-    padding-bottom: 20px; }
-    .politica .title {
+    padding-bottom: 20px;
+    height: auto; }
+    .quienes-somos .title {
       margin-bottom: 10px; }
-      .politica .title h1 {
+      .quienes-somos .title h1 {
         color: #A00D0D; }
-    .politica .content {
+    .quienes-somos .texto-quienes {
+      margin-bottom: 1rem; }
+    .quienes-somos .content {
       margin: 20px 0px; }
-      .politica .content .hr-content {
+      .quienes-somos .content .hr-content {
         margin-top: 50px; }
-      .politica .content .numeration {
+      .quienes-somos .content .numeration {
         margin: 20px 0px; }
+
+  .logos .logo-valor {
+    width: 270px;
+    margin-bottom: 2rem; }
+  .logos .sombrillas img {
+    max-height: 90px; }
+  .logos .title h2 {
+    font-size: 1.3rem; }
+  .logos .owl-logos-one .item .cont-img img, .logos .owl-logos-two .item .cont-img img {
+    width: 150px; }
+  .logos .owl-logos-one .owl-nav, .logos .owl-logos-two .owl-nav {
+    bottom: 300px; }
 
   .equipo .item {
     padding: 0 1rem; }
 
-  .historia .owl-historia .item {
-    text-align: center;
-    font-size: 14px; }
-    .historia .owl-historia .item .bubble1, .historia .owl-historia .item .bubble2 {
-      display: none; }
-    .historia .owl-historia .item p {
-      font-size: 14px; }
-  .historia .owl-historia .owl-nav {
-    position: relative;
-    bottom: -30px; }
-    .historia .owl-historia .owl-nav button {
-      position: absolute; }
-      .historia .owl-historia .owl-nav button.owl-prev {
-        left: 15%; }
-      .historia .owl-historia .owl-nav button.owl-next {
-        right: 15%; }
-  .historia .owl-historia .owl-dots {
-    text-align: center;
-    font-weight: 500;
-    padding: 0 20px;
-    margin-top: 2rem; }
-    .historia .owl-historia .owl-dots button {
-      width: 200px;
-      height: 30px;
-      color: #636363;
-      transition: all .5s; }
-
-  .equipoHumano .owl-equipoHumano .owl-nav {
-    bottom: 35px; }
-    .equipoHumano .owl-equipoHumano .owl-nav button {
-      position: absolute; }
-      .equipoHumano .owl-equipoHumano .owl-nav button.owl-prev {
-        left: 2%; }
-      .equipoHumano .owl-equipoHumano .owl-nav button.owl-next {
-        right: 2%; }
-  .equipoHumano .owl-equipoHumano .owl-dots {
-    text-align: center;
-    font-weight: 500;
-    padding: 0 20px;
-    margin-top: 1rem; }
+  .historia .owl-nav {
+    bottom: 65%;
+    padding: 0 10px; }
+    .historia .owl-nav .owl-prev span, .historia .owl-nav .owl-next span {
+      font-size: 50px; }
 
   .proyects-cont {
     padding: 0rem .25rem; }
@@ -1200,6 +1085,32 @@ footer {
     .info-project .galery .container-img a {
       padding: .5rem; }
       .info-project .galery .container-img a img {
-        margin: 0; } }
+        margin: 0; }
+
+  .novedades {
+    padding: 0; }
+    .novedades .content-novedades {
+      padding: 1rem; }
+
+  .servicios .tab-col {
+    padding: 0; }
+    .servicios .tab-col .btn-tab .icon-tab {
+      width: 8px; }
+    .servicios .tab-col .content-tab {
+      padding: 1rem; }
+      .servicios .tab-col .content-tab h6 {
+        text-transform: uppercase;
+        margin-bottom: 1rem; }
+
+  footer {
+    padding-top: 2rem; }
+    footer .body-footer .col-footer {
+      margin-bottom: 1rem; }
+      footer .body-footer .col-footer .content-footer .sub-footer {
+        margin-bottom: 1rem; }
+    footer .nav-footer {
+      padding: 0; }
+    footer .powered p {
+      font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */

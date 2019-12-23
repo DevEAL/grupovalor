@@ -7,11 +7,10 @@
         font-weight: bold;
     }
 }
+
 .proyects-cont{
     .item{
-        .prTitlePd{
-            padding: 2rem;
-        }
+        .prTitlePd{ padding: 2rem; }
         .content{
             .prContentPd{
                 padding: 1.75rem;
@@ -38,17 +37,21 @@
                     }
                     &:hover{ 
                         text-decoration: none; 
-                        &::before{
-                            width: 100%;
-                        }
+                        &::before{ width: 100%; }
                     }
                 }
             }
         }
         &:hover{
-            .content{
-                bottom: 0%;
-            }
+            .content{ bottom: 0%; }
         }
+    }
+}
+
+.otros-proyectos{
+    padding-bottom: 60px;
+    span{
+        color: $red-valor;
+        font-weight: bold;
     }
 }
