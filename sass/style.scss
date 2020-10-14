@@ -9,6 +9,11 @@ $gray2-valor: #B3B3B3;
 $gray3-valor: #F5F5F5;
 $gray4-valor: #1E1E1E;
 
+path{
+    fill:#fff;
+    stroke:#fff;
+}
+
 body{
     background: #FFFFFF;
     font-family: $text-font;
@@ -56,7 +61,10 @@ p{
     align-items: center;
     opacity: 1;
     transition: all 1.5s;
-    img{ width: 150px; }
+    #lottie{
+        width: 60%;
+        height: 60%;
+    }
 }
 
 .home{
@@ -67,7 +75,7 @@ p{
     background-size: cover;
 }
 
-header{
+header {
     .nav{
         width: 100%;
         height: 100px;
@@ -159,7 +167,6 @@ header{
 
 .sidebar.active{ top: 0; }
 
-
 .hr-title{
     width: 70px;
     height: 3px;
@@ -167,7 +174,6 @@ header{
     margin-left: 0%;
     margin-right: 50%;
 }
-
 .hr-content{
     width: 60px;
     height: 2px;
@@ -196,9 +202,17 @@ footer{
                     margin-bottom: 3rem;
                     text-align: center;
                 }
-                p{
+                p, .footer-link{
+                    display: block;
                     font-size: 14px;
                     color:$gray2-valor;
+                    transition: all 0.3s;
+                    margin-bottom: 1rem;
+                }
+                .footer-link:hover {
+                    color: #762124;
+                    font-weight: bold;
+                    text-decoration: none;
                 }
                 .social-media{
                     display: flex;
@@ -244,16 +258,26 @@ footer{
             }
         }
     }
-    .powered{ text-align: right; }
+    .powered {
+        text-align: right;
+        .eal-link {color: $gray1-valor;}
+    }
 }
 
-.footer-black{
+.footer-black {
     background: $gray4-valor;
-    h4,footer .nav-footer-items a{ color: $gray2-valor;}
+    h4,footer .nav-footer-items a { color: $gray2-valor;}
     footer {
         .body-footer {
-            .col-footer{
-                .content-footer p{ color: $gray1-valor; }
+            .col-footer {
+                .content-footer {
+                    p, .footer-link {
+                        color: $gray1-valor;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                } 
             } 
         }
     }
@@ -267,4 +291,5 @@ footer{
 @import 'novedades';
 @import 'servicios';
 @import 'contacto';
+@import 'politicas';
 @import 'responsive';

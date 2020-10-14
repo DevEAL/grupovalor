@@ -38,7 +38,6 @@ $(document).ready(function(){
     }
 
     cargarJSON = () => {
-    // fetch('https://motoraidadventure.com/proyects.json')
     fetch('./proyects.json')
         .then((res) => {
             return res.json();
@@ -59,7 +58,8 @@ $(document).ready(function(){
                 document.getElementById('goWeb').innerHTML = goToWeb;
             }
         
-            helper.images.forEach(element => {
+            helper.images.forEach((element, index) => {
+                if(index >= 5) return;
                 imgProject += `
                     <div class="owl-slide cover" style="background-image: url('img/Proyectos/${element}');"></div>
                 `;
@@ -159,5 +159,4 @@ $(document).ready(function(){
     }
    
     cargarJSON();
-   
 });

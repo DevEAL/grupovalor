@@ -4,7 +4,6 @@ $(document).ready(function(){
         $('.sidebar').toggleClass('active');
     })
 
-
     $('#initial').click(function(){
         $(this).css('opacity','0');
         setTimeout(()=>{
@@ -13,12 +12,14 @@ $(document).ready(function(){
         },1500);
     });
 
-
     let cw = $('.proyects-cont .item').width();
     $('.proyects-cont .item').css({'height':cw+'px'});
     $(window).resize(function() {
         let cw = $('.proyects-cont .item').width();
         $('.proyects-cont .item').css({'height':cw+'px'});
     });
-    
-})
+
+});
+
+const date = new Date();
+document.getElementById('dateCopy').innerHTML = date.getFullYear();

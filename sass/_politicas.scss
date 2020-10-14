@@ -1,0 +1,17 @@
+.politicas-title{
+  padding-top: 180px;
+  padding-bottom: 60px;
+  .title{
+      margin-bottom: 20px;
+      h1{ color: $red-valor;}
+      .hr-title{ background: $red-valor; }
+  }
+}
+
+.politicas-text {
+  h5 { margin: 2rem 0; }
+  h6 { margin: 1rem 0; }
+  ol {
+    li { margin-bottom: 0.3rem; }
+  }
+}

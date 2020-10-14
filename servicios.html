@@ -12,14 +12,15 @@
     <link rel="stylesheet" href="css/font-awesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Grupo Valor - Servicios</title>
 </head>
 <body>
     <header>
         <div class="nav nav-red">
             <div class="valor-logo">
-                <a href="index.html"><img src="img/SVG/valor_logo_white.svg" alt="Logo Grupo Valor blanco"></a>
+                <a href="/"><img src="img/SVG/valor_logo_white.svg" alt="Logo Grupo Valor blanco"></a>
             </div>
             <div class="nav-toggle">
                 <span></span>
@@ -122,14 +123,14 @@
                     <div class="content-footer">
                         <h4 class="sub-footer">Políticas y privacidad</h4>
                         <p>Todos los derechos reservados ©</p>
-                        <p>Política de datos.</p>
-                        <p>Aviso de privacidad.</p>
+                        <a class="footer-link" href="politicas.html">Política de datos.</a>
+                        <!-- <p>Aviso de privacidad.</p> -->
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-footer">
                     <div class="content-footer">
                         <h4 class="sub-footer">Contáctanos</h4>
-                        <p>atencionalcliente@grupovalor.com.co</p>
+                        <a class="footer-link" href="mailto: atencionalcliente@grupovalor.com.co">atencionalcliente@grupovalor.com.co</a>
                         <p>Carrera 16 Nº 97 - 37, Bogotá, Colombia
                             <br>Grupo Valor
                         </p>
@@ -165,7 +166,10 @@
             <hr class="w-hr">
             <div class="row powered">
                 <div class="col-md-12">
-                    <p>Copyright © 2019. Powered By En Algún Lugar</p>
+                    <p>
+                        Copyright © <span id="dateCopy"></span>. Powered By 
+                        <a class="eal-link" href="https://www.enalgunlugarestudio.com/" target="_blank">En Algún Lugar Estudio</a>
+                    </p>
                 </div>
             </div>
         </footer>

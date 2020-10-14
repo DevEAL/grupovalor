@@ -17,7 +17,7 @@
         margin-top: 1rem;
         margin-bottom: 1rem; 
     }
-    .img-novedades,.content-novedades{
+    .img-novedades, .content-novedades{
         padding-left: 6rem;
         padding-right: 6rem;
     }
@@ -25,6 +25,7 @@
         filter: grayscale(100%);
         display: flex;
         align-items: flex-end;
+        justify-content: center;
     }
     .content-novedades{
         color: $gray1-valor;
@@ -33,6 +34,8 @@
         justify-content: center;
         h5{
             text-transform: uppercase;
+        }
+        small {
             margin-bottom: 2rem;
         }
         a{
