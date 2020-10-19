@@ -58,9 +58,14 @@ $screen-xl: 1920px;
     }
     .sombrillas{
         margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
         img{
             max-height: 70px;
             margin-bottom: 2rem;
+        }
+        .logo-uno {
+            img { max-height: 164px; }
         }
     }
     .title{
@@ -114,6 +119,9 @@ $screen-xl: 1920px;
                 &:focus{ outline:0; }
             }
         }
+    }
+    .aliados {
+        h2 { text-transform: capitalize; }
     }
     @include xl { padding-top: 0; }
 }
