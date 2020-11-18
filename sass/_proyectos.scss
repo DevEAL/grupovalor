@@ -10,6 +10,9 @@
 }
 
 .proyects-cont{
+    #tipeProyect {
+        justify-content: center;
+    }
     a{
         color: #fff;
         &:hover{ text-decoration: none; }

@@ -176,7 +176,16 @@
         "date": "15/10/2020",
         "imgRight": true,
         "title": "Avances de Obra",
-        "description": "Avances de Obra Proyecto Valenti y Reserva del Turpial ...",
+        "description": "Avances de Obra Proyecto Valenti y Reserva del Turpial...",
         "link": "https://proyectovalenti.com/Proyecto/Avances"
+    },
+    {
+        "id": "20",
+        "img": "proyecto-33dc.jpg",
+        "date": "",
+        "imgRight": false,
+        "title": "PRE-RECONOCIMIENTO PROGRAMA BOGOTÁ CONSTRUCCIÓN SOSTENIBLE AL PROYECTO 33DC",
+        "description": "La Secreataría Distrital de Ambiente le emitió el pre-reconocimiento al Proyecto 33DC de a localidad de Chapinero por haber implementado estategias de Ecourbanismo y/o Construcción Sostenible en el marco del Programa Bogotá Construcción Sostenible",
+        "link": ""
     }
 ]

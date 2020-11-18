@@ -86,7 +86,7 @@ header {
         align-items: center;
         z-index: 3;
         .valor-logo{
-            img{ width: 250px; }
+            img{ width: 100%; }
         }
         .nav-toggle{
             min-width: 35px;
@@ -239,9 +239,10 @@ footer{
         justify-content: center;
         padding: 2rem 0;
         .iso-footer{
-            width: 60px;
+            width: 20%;
             margin-bottom: 3rem;
         }
+        .iso-footer.size_iso_footer { width: 10%; }
         .nav-footer-items{
             display: flex;
             justify-content: center;
