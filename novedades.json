@@ -187,5 +187,23 @@
         "title": "PRE-RECONOCIMIENTO PROGRAMA BOGOTÁ CONSTRUCCIÓN SOSTENIBLE AL PROYECTO 33DC",
         "description": "La Secreataría Distrital de Ambiente le emitió el pre-reconocimiento al Proyecto 33DC de a localidad de Chapinero por haber implementado estategias de Ecourbanismo y/o Construcción Sostenible en el marco del Programa Bogotá Construcción Sostenible",
         "link": ""
+    },
+    {
+        "id": "21",
+        "img": "Sergio-Eduardo-Mutis.jpg",
+        "date": "5/11/2020",
+        "imgRight": true,
+        "title": "Colombiano fue ganador en el concurso internacional Gaudí Architecture Prize",
+        "description": "El arquitecto Sergio Eduardo Mutis ganó el concurso con su tesis de grado en cinco categorías: edificios y agricultura, arquitectura verde, arquitectura de uso mixto, arquitectura residencial y vivienda social.",
+        "link": "https://www.larepublica.co/empresas/colombiano-fue-ganador-del-architecture-masterprize-en-cinco-categorias-con-tesis-de-grado-3084756"
+    },
+    {
+        "id": "22",
+        "img": "SERGIO-MUTIS.png",
+        "date": "13/11/2020",
+        "imgRight": false,
+        "title": "Perspectivas de la vivienda",
+        "description": "Lo que viene para la vivienda en Colombia.",
+        "link": "https://www.larepublica.co/analisis/sergio-mutis-caballero-500033/perspectivas-de-la-vivienda-3088521"
     }
 ]
