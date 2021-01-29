@@ -1,7 +1,6 @@
 const gulp = require('gulp'),
       sass = require('gulp-sass'),
       autoprefixer = require('gulp-autoprefixer'),
-      minifyCSS = require('gulp-minify-css'),
       concat = require('gulp-concat'),
       babel = require('gulp-babel'),
       browserSync = require('browser-sync'),
@@ -23,15 +22,16 @@ gulp.task('browser-sync', () =>{
 
 gulp.task('scss-task', () => {
     return gulp.src('./sass/*.scss').
-            pipe(sass({
-                outputStyle: 'compact',
-                sourceComment: true
-            })).
-            pipe(autoprefixer()).
-            pipe(concat('style.css')).
-            pipe(minifyCSS()).
-            pipe(reload({stream:true})).
-            pipe(gulp.dest('./css'))
+		pipe(sourcemaps.init({loadMaps: true})).
+		pipe(sass({
+			outputStyle: 'compressed',
+			sourceComment: true
+		})).
+		pipe(autoprefixer()).
+		pipe(concat('style.css')).
+		pipe(reload({stream:true})).
+		pipe(sourcemaps.write('./css')).
+		pipe(gulp.dest('./css'))
 });
 
 gulp.task('es6-task', () => {

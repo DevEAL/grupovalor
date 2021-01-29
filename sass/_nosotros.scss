@@ -9,6 +9,27 @@ $screen-xl: 1920px;
 @mixin xl { @media (max-width: $screen-xl) { @content; } }
 @mixin rwd($screen) { @media (max-width: $screen +'px') { @content;}}
 
+// Video Nosotros
+.video-container {
+    padding-top: 8vw;
+    --video--width: 1920;
+    --video--height: 1080;
+    position: relative;
+    padding-bottom: calc(var(--video--height) / var(--video--width) * 100%);
+    overflow: hidden;
+    max-width: 100%;
+    & iframe,
+    & object,
+    & object {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+// fin video Nosotros
+
 .nav-red{ background: $red-valor; }
 
 .quienes-somos{
